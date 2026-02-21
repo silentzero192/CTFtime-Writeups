@@ -11,18 +11,6 @@ The purpose of this repository is to:
 
 ---
 
-## Repository Structure
-`CTFtime-Writeups/
-│
-├── 2025/
-├── 2026/
-└── README.md`
-
-
-Each yearly directory contains writeups organized by competition name and category.
-
----
-
 ## What You’ll Find Here
 
 - Detailed breakdown of challenge logic
