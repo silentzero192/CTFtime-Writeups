@@ -12,11 +12,11 @@ The purpose of this repository is to:
 ---
 
 ## Repository Structure
-CTFtime-Writeups/
+`CTFtime-Writeups/
 │
 ├── 2025/
 ├── 2026/
-└── README.md
+└── README.md`
 
 
 Each yearly directory contains writeups organized by competition name and category.
@@ -60,5 +60,4 @@ Cybersecurity Enthusiast | CTF Player | Security Research Learner
 
 ---
 
-> “Security is not about tools — it’s about understanding systems deeply.”
-> “Deep understanding breaks systems. Documentation builds expertise.”
+> “Security is not about tools — it’s about understanding systems deeply. Deep understanding breaks systems. Documentation builds expertise.”
