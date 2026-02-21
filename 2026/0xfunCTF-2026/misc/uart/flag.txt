@@ -1,0 +1,62 @@
+First i run following command 
+    sigrok-cli -i uart.sr -P uart:baudrate=115200 > flag.txt
+Then i removed the extra lines and separates the hex values
+
+uart-1: 30
+
+uart-1: 78
+
+uart-1: 66
+
+uart-1: 75
+
+uart-1: 6E
+
+uart-1: 7B
+
+uart-1: 55
+
+uart-1: 41
+
+uart-1: 52
+
+uart-1: 54
+
+uart-1: 5F
+
+uart-1: 38
+
+uart-1: 32
+
+uart-1: 5F
+
+uart-1: 4D
+
+uart-1: 32
+
+uart-1: 5F
+
+uart-1: 42
+
+uart-1: 33
+
+uart-1: 39
+
+uart-1: 32
+
+uart-1: 6E
+
+uart-1: 39
+
+uart-1: 64
+
+uart-1: 6E
+
+uart-1: 32
+
+uart-1: 7D
+
+307866756E7B554152545F38325F4D325F423339326E39646E327D
+
+Convert hex ---> ascii
+    0xfun{UART_82_M2_B392n9dn2}

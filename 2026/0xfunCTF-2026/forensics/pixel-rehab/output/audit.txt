@@ -1,0 +1,21 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Feb 14 21:09:14 2026
+Invocation: foremost -i pixel.fun 
+Output directory: /home/jilani/Desktop/0xfunCTF-2026/forensics/pixel-rehab/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: pixel.fun
+Start: Sat Feb 14 21:09:14 2026
+Length: 622 KB (636966 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Sat Feb 14 21:09:14 2026
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+Foremost finished at Sat Feb 14 21:09:14 2026
