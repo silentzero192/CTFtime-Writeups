@@ -1,0 +1,20 @@
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>, Silas The Shark Vane <silas@scallywag.net>, Anne Bonny <anne.bonny@scallywag.net>, Barnaby The Blade Thorne <barnaby@scallywag.net>, "Dr. Alistair Pox" <pox@scallywag.net>, Groggy George <george.kitchen@scallywag.net>, Stitch <stitch@scallywag.net>, Ishmael Hands <hands@scallywag.net>, Old Man Jenkins <jenkins@scallywag.net>, Ratty Pete <pete@scallywag.net>, Mad Maggie <maggie.maps@scallywag.net>, Thieving Thomas <thomas@scallywag.net>, Long-John Silver <silver@scallywag.net>, Scurvy Steve <steve@scallywag.net>, Admin <admin@scallywag.net>
+Date: 
+Subject: System Update: Scallywag OS 2.0
+
+Ahoy, Crew,
+
+This is an announcement regarding an essential system-wide upgrade. We will be deploying **Scallywag OS 2.0** across all shipboard devices and network systems.
+
+This update includes significant improvements to system stability, enhanced security protocols (to better fend off those pesky digital kraken), and a few new features designed to make your ship-mail experience smoother than a calm sea.
+
+You may experience minor disruptions to email access and other networked services over the next 24 hours as the update rolls out. Please ensure your personal devices are connected to the ship's network to receive the update. A restart of your device may be required once the update is complete.
+
+We believe these upgrades will ensure our digital infrastructure remains as sturdy as the *Scallywag* herself.
+
+Should you encounter any unexpected anomalies or technical squalls, please report them to the System Administrator.
+
+Admin
+System Administrator
+scallywag.net

@@ -1,0 +1,15 @@
+From: Ishmael Hands <hands@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>
+Date: 
+Subject: Gunpowder inventory low
+
+Captain,
+
+A grim report from the powder magazine, sir. My recent audit shows our gunpowder stores are running dangerously low, far more than comfortable, especially with the uncertain waters ahead.
+
+The attached `inventory.xlsx` details the current stock for all shot types – cannon, musket, and pistol – and I've highlighted the critical shortages. We're well under what I'd consider a safe reserve for any serious engagement or even sustained practice.
+
+With a proper fight, we'd be blowing smoke and not much else after a few broadsides. This needs addressing with haste, Captain. My cannons are hungry, but they can't eat air.
+
+Ishmael Hands
+Gunner

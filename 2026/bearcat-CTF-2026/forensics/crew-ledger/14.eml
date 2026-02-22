@@ -1,0 +1,73 @@
+Subject: Loot distribution for the last raid
+From: Silas "The Shark" Vane <silas@scallywag.net>
+To: Captain Bartholomew "Black" Hook <captain@scallywag.net>,
+ Silas "The Shark" Vane <silas@scallywag.net>,
+ Anne Bonny <anne.bonny@scallywag.net>,
+ Barnaby "The Blade" Thorne <barnaby@scallywag.net>,
+ Dr. Alistair Pox <pox@scallywag.net>,
+ Groggy George <george.kitchen@scallywag.net>, Stitch <stitch@scallywag.net>,
+ Ishmael Hands <hands@scallywag.net>, Old Man Jenkins <jenkins@scallywag.net>,
+ Ratty Pete <pete@scallywag.net>, Mad Maggie <maggie.maps@scallywag.net>,
+ Thieving Thomas <thomas@scallywag.net>,
+ Long-John Silver <silver@scallywag.net>, Scurvy Steve <steve@scallywag.net>,
+ Admin <admin@scallywag.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3428350139040579126=="
+
+--===============3428350139040579126==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Alright, you greedy lot!
+
+The numbers are in, and the accounts are settled for our recent... acquisitio=
+n. We took a good prize, and now it's time for every man and woman aboard to =
+get their fair share, as per tradition and the Captain's decree.
+
+Attached you'll find `shares.csv`, detailing each crew member's cut of the pl=
+under. Don't go crying to me if you think you deserved more; the shares were =
+calculated based on rank, participation, and a few other considerations I won=
+'t bore you with.
+
+Distribution of the coin and goods will begin after the midday meal, on the m=
+ain deck. Be there, be orderly, and be prepared to take your due. Any dispute=
+s will be heard *after* everyone has received their share, and only if you ca=
+n present a solid argument.
+
+And remember, what's yours is yours, and what's someone else's... well, let's=
+ keep it that way, shall we? I've got a keen eye for sticky fingers.
+
+Silas "The Shark" Vane
+Quartermaster
+The Scallywag
+
+--===============3428350139040579126==
+Content-Type: text/csv
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="shares.csv"
+MIME-Version: 1.0
+
+Q3JldyBOYW1lLFJvbGUsR29sZCBTaGFyZXMgKFBpZWNlcyBvZiBFaWdodCksU2lsdmVyIFNoYXJl
+cyAoTWFya3MpLEpld2VscyAoRXN0aW1hdGVkIFZhbHVlKSxTcGVjaWFsIEl0ZW1zCiJDYXB0YWlu
+IEJhcnRob2xvbWV3ICIiQmxhY2siIiBIb29rIixDYXB0YWluLDUwMDAsMjAwLDgwMCxPcm5hdGUg
+Q3V0bGFzcyxTcHlnbGFzcyAoQnJhc3MgJiBJdm9yeSkKIlNpbGFzICIiVGhlIFNoYXJrIiIgVmFu
+ZSIsUXVhcnRlcm1hc3RlciwyNTAwLDEwMCw0MDAsU2lsdmVyIExvY2tldCxDYXNrIG9mIEZpbmUg
+QnJhbmR5CkFubmUgQm9ubnksRmlyc3QgTWF0ZSwyNTAwLDEwMCw0MDAsUGFpciBvZiBKZXdlbGVk
+IERhZ2dlcnMsU2lsayBTY2FyZgoiQmFybmFieSAiIlRoZSBCbGFkZSIiIFRob3JuZSIsQm9hdHN3
+YWluLDE1MDAsNzUsMjUwLEhlYXZ5IEJvYXJkaW5nIEF4ZSxCb3R0bGUgb2YgQWdlZCBSdW0KRHIu
+IEFsaXN0YWlyIFBveCxTaGlwJ3MgU3VyZ2VvbiwxNTAwLDc1LDI1MCxNZWRpY2FsIEluc3RydW1l
+bnRzIChTaWx2ZXIpLFNtYWxsIEJveCBvZiBSYXJlIEhlcmJzCkdyb2dneSBHZW9yZ2UsQ29vaywx
+MDAwLDUwLDE1MCxCYXJyZWwgb2YgU3BpY2VzLEZpbmUgUG9yY2VsYWluIEJvd2wKU3RpdGNoLFNh
+aWxtYWtlciwxMDAwLDUwLDE1MCxCb2x0IG9mIEltcG9ydGVkIFNpbGssTmV3IFNld2luZyBBd2wK
+SXNobWFlbCBIYW5kcyxHdW5uZXIsMTUwMCw3NSwyNTAsRW5ncmF2ZWQgRmxpbnRsb2NrIFBpc3Rv
+bCxQb3VjaCBvZiBRdWFsaXR5IFNob3QKT2xkIE1hbiBKZW5raW5zLExvb2tvdXQsNzUwLDMwLDEw
+MCxOZXcgU3B5Z2xhc3MsV2FybSBXb29sIEJsYW5rZXQKUmF0dHkgUGV0ZSxQb3dkZXIgTW9ua2V5
+LDI1MCwxMCwyNSxTbWFsbCBTaWx2ZXIgQ29pbixDaG9jb2xhdGUgQmFyCk1hZCBNYWdnaWUsTmF2
+aWdhdG9yLDE1MDAsNzUsMjUwLEFudGlxdWUgQXN0cm9sYWJlLFNpbGsgTWFwIENhc2UKVGhpZXZp
+bmcgVGhvbWFzLENyZXdtYW4sNzUwLDMwLDEwMCxHb2xkIFJpbmcsTGVhdGhlciBQb3VjaCAoRXh0
+cmEgTGFyZ2UpCkxvbmctSm9obiBTaWx2ZXIsU3RvcmVrZWVwZXIsMTAwMCw1MCwxNTAsU2V0IG9m
+IFdlaWdoaW5nIFNjYWxlcyxFeG90aWMgV29vZCBCb3gKU2N1cnZ5IFN0ZXZlLERlY2toYW5kLDc1
+MCwzMCwxMDAsR29vZCBRdWFsaXR5IEJvb3RzLFNoYXJwIEJlbHQgS25pZmUKU3lzdGVtIEFkbWlu
+LE15c3RlcnkgR3Vlc3QsMCwwLDAsU3lzdGVtIE1haW50ZW5hbmNlIENyZWRpdHM=
+
+--===============3428350139040579126==--

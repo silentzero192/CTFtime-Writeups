@@ -1,0 +1,14 @@
+From: Long-John Silver <silver@scallywag.net>
+To: Silas The Shark Vane <silas@scallywag.net>
+Date: 
+Subject: Looting the merchant ship
+
+Silas,
+
+The boarding party has done their work, and we've managed to strip the merchantman of its most valuable cargo before she went down. It was a messy business, but my lads were efficient.
+
+The attached `loot_list.txt` details everything we managed to haul aboard, from trade goods to personal effects, and a few barrels of rather fine rum, I might add. I've done my best to organize it as it came in.
+
+We've got it temporarily stowed in the main hold, but it'll need proper accounting and storage. Let me know where you want everything sorted, and if any of it is earmarked for a quick sale or immediate consumption.
+
+Silver.

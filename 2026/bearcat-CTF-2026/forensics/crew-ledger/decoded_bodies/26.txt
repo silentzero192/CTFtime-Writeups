@@ -1,0 +1,14 @@
+From: Admin <admin@scallywag.net>
+To: Silas The Shark Vane <silas@scallywag.net>
+Date: 
+Subject: Server maintenance at midnight
+
+Silas,
+
+Please be advised that I will be performing essential maintenance on the main server tonight, commencing at midnight.
+
+There will be a period of downtime, estimated to last approximately two hours, during which email services and any other networked systems will be unavailable. Please ensure any critical communications are sent before then.
+
+I expect full functionality to be restored by 0200.
+
+Admin

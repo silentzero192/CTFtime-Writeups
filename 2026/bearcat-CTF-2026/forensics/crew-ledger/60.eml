@@ -1,0 +1,99 @@
+Subject: Backup your mailboxes
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew "Black" Hook <captain@scallywag.net>,
+ Silas "The Shark" Vane <silas@scallywag.net>,
+ Anne Bonny <anne.bonny@scallywag.net>,
+ Barnaby "The Blade" Thorne <barnaby@scallywag.net>,
+ Dr. Alistair Pox <pox@scallywag.net>,
+ Groggy George <george.kitchen@scallywag.net>, Stitch <stitch@scallywag.net>,
+ Ishmael Hands <hands@scallywag.net>, Old Man Jenkins <jenkins@scallywag.net>,
+ Ratty Pete <pete@scallywag.net>, Mad Maggie <maggie.maps@scallywag.net>,
+ Thieving Thomas <thomas@scallywag.net>,
+ Long-John Silver <silver@scallywag.net>, Scurvy Steve <steve@scallywag.net>,
+ Admin <admin@scallywag.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3117152630832129178=="
+
+--===============3117152630832129178==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Ahoy, Crew,
+
+A critical reminder regarding data preservation on the *Scallywag.net* networ=
+k.
+
+While our systems are robust, wise sailors always secure their valuables. I s=
+trongly advise all crew members to back up their ship-mail mailboxes regularl=
+y. This ensures that your valuable communications, records, and any... *sensi=
+tive* information remain safe, even in the event of unforeseen system anomali=
+es or digital squalls.
+
+I've attached a simple backup script, `backup_script.sh`, to assist you in th=
+is process. Please execute it on your primary shipboard device. Detailed inst=
+ructions for its use are included within the script itself.
+
+Should you encounter any difficulties or require assistance in securing your =
+mail, do not hesitate to contact the System Administrator.
+
+Admin
+System Administrator
+scallywag.net
+
+--===============3117152630832129178==
+Content-Type: text/x-sh
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="backup_script.sh"
+MIME-Version: 1.0
+
+IyEvYmluL2Jhc2gKCiMgU2NhbGx5d2FnLm5ldCBTaGlwLU1haWwgQmFja3VwIFNjcmlwdAojIFZl
+cnNpb246IDEuMAojIEF1dGhvcjogU3lzdGVtIEFkbWluaXN0cmF0b3IKIyBEYXRlOiBbQ3VycmVu
+dCBEYXRlLCBlLmcuLCAyNXRoIERheSBvZiB0aGUgOHRoIE1vb24sIFllYXIgb2YgT3VyIExvcmQu
+Li5dCgojIFRoaXMgc2NyaXB0IGhlbHBzIHlvdSBjcmVhdGUgYSBsb2NhbCBiYWNrdXAgb2YgeW91
+ciBzaGlwLW1haWwgbWFpbGJveC4KIyBJdCB3aWxsIGNyZWF0ZSBhIHRpbWVzdGFtcGVkIGFyY2hp
+dmUgb2YgeW91ciBlbWFpbCBkYXRhIGluIHlvdXIgZGVzaWduYXRlZCBiYWNrdXAgZGlyZWN0b3J5
+LgoKIyAtLS0gQ29uZmlndXJhdGlvbiAtLS0KIyBJTVBPUlRBTlQ6IEFkanVzdCB0aGVzZSB2YXJp
+YWJsZXMgdG8gbWF0Y2ggeW91ciBzeXN0ZW0gYW5kIHByZWZlcmVuY2VzLgoKIyAxLiBNQUlMX0RJ
+UjogVGhlIGFic29sdXRlIHBhdGggdG8geW91ciBzaGlwLW1haWwgZGlyZWN0b3J5LgojICAgIFRo
+aXMgaXMgd2hlcmUgeW91ciBlbWFpbCBmaWxlcyAoZS5nLiwgaW5ib3gsIHNlbnQsIGRyYWZ0cykg
+YXJlIHN0b3JlZC4KIyAgICBFeGFtcGxlOiAvaG9tZS95b3VydXNlcm5hbWUvLnNoaXBtYWlsCk1B
+SUxfRElSPSIvaG9tZS8kVVNFUi8uc2hpcG1haWwiIAoKIyAyLiBCQUNLVVBfUk9PVF9ESVI6IFRo
+ZSBkaXJlY3Rvcnkgd2hlcmUgeW91ciBiYWNrdXBzIHdpbGwgYmUgc3RvcmVkLgojICAgIFRoaXMg
+c2NyaXB0IHdpbGwgY3JlYXRlIGEgc3ViZGlyZWN0b3J5IHdpdGhpbiB0aGlzIHBhdGggZm9yIGVh
+Y2ggYmFja3VwLgojICAgIEV4YW1wbGU6IC9ob21lL3lvdXJ1c2VybmFtZS9TaGlwTWFpbF9CYWNr
+dXBzCkJBQ0tVUF9ST09UX0RJUj0iL2hvbWUvJFVTRVIvU2hpcE1haWxfQmFja3VwcyIKCiMgMy4g
+QVJDSElWRV9GT1JNQVQ6IFRoZSBjb21wcmVzc2lvbiBmb3JtYXQgZm9yIHlvdXIgYmFja3VwLgoj
+ICAgIE9wdGlvbnM6ICJ0YXIuZ3oiIChjb21wcmVzc2VkIHRhciBhcmNoaXZlKSwgInppcCIgKHpp
+cCBhcmNoaXZlKQpBUkNISVZFX0ZPUk1BVD0idGFyLmd6IiAKCiMgLS0tIFNjcmlwdCBMb2dpYyAt
+LS0KCmVjaG8gIi0tLSBTY2FsbHl3YWcubmV0IFNoaXAtTWFpbCBCYWNrdXAgVXRpbGl0eSAtLS0i
+CgojIENoZWNrIGlmIHRoZSBtYWlsIGRpcmVjdG9yeSBleGlzdHMKaWYgWyAhIC1kICIkTUFJTF9E
+SVIiIF07IHRoZW4KICAgIGVjaG8gIkVycm9yOiBNYWlsIGRpcmVjdG9yeSBub3QgZm91bmQgYXQg
+JE1BSUxfRElSLiIKICAgIGVjaG8gIlBsZWFzZSBlbnN1cmUgTUFJTF9ESVIgaXMgY29ycmVjdGx5
+IHNldCBpbiB0aGUgc2NyaXB0IGFuZCB0aGF0IHlvdSBoYXZlIG1haWwgZGF0YS4iCiAgICBleGl0
+IDEKZmkKCiMgQ3JlYXRlIGJhY2t1cCByb290IGRpcmVjdG9yeSBpZiBpdCBkb2Vzbid0IGV4aXN0
+CmlmIFsgISAtZCAiJEJBQ0tVUF9ST09UX0RJUiIgXTsgdGhlbgogICAgZWNobyAiQ3JlYXRpbmcg
+YmFja3VwIGRpcmVjdG9yeTogJEJBQ0tVUF9ST09UX0RJUiIKICAgIG1rZGlyIC1wICIkQkFDS1VQ
+X1JPT1RfRElSIiB8fCB7IGVjaG8gIkVycm9yOiBDb3VsZCBub3QgY3JlYXRlIGJhY2t1cCBkaXJl
+Y3RvcnkuIjsgZXhpdCAxOyB9CmZpCgojIEdlbmVyYXRlIGEgdGltZXN0YW1wIGZvciB0aGUgYmFj
+a3VwIGZpbGUKVElNRVNUQU1QPSQoZGF0ZSArIiVZJW0lZF8lSCVNJVMiKQpCQUNLVVBfRklMRV9O
+QU1FPSJzaGlwbWFpbF9iYWNrdXBfJHtUSU1FU1RBTVB9LiR7QVJDSElWRV9GT1JNQVR9IgpGVUxM
+X0JBQ0tVUF9QQVRIPSIke0JBQ0tVUF9ST09UX0RJUn0vJHtCQUNLVVBfRklMRV9OQU1FfSIKCmVj
+aG8gIlByZXBhcmluZyB0byBiYWNrdXAgbWFpbCBmcm9tOiAkTUFJTF9ESVIiCmVjaG8gIkJhY2t1
+cCB3aWxsIGJlIHNhdmVkIHRvOiAkRlVMTF9CQUNLVVBfUEFUSCIKCiMgUGVyZm9ybSB0aGUgYmFj
+a3VwIGJhc2VkIG9uIHRoZSBjaG9zZW4gYXJjaGl2ZSBmb3JtYXQKY2FzZSAiJEFSQ0hJVkVfRk9S
+TUFUIiBpbgogICAgInRhci5neiIpCiAgICAgICAgZWNobyAiQ3JlYXRpbmcgY29tcHJlc3NlZCB0
+YXIgYXJjaGl2ZS4uLiIKICAgICAgICB0YXIgLWN6ZiAiJEZVTExfQkFDS1VQX1BBVEgiIC1DICIk
+KGRpcm5hbWUgIiRNQUlMX0RJUiIpIiAiJChiYXNlbmFtZSAiJE1BSUxfRElSIikiCiAgICAgICAg
+OzsKICAgICJ6aXAiKQogICAgICAgIGVjaG8gIkNyZWF0aW5nIHppcCBhcmNoaXZlLi4uIgogICAg
+ICAgIHppcCAtciAiJEZVTExfQkFDS1VQX1BBVEgiICIkTUFJTF9ESVIiCiAgICAgICAgOzsKICAg
+ICopCiAgICAgICAgZWNobyAiRXJyb3I6IFVuc3VwcG9ydGVkIEFSQ0hJVkVfRk9STUFUICckQVJD
+SElWRV9GT1JNQVQnLiIKICAgICAgICBlY2hvICJQbGVhc2Ugc2V0IEFSQ0hJVkVfRk9STUFUIHRv
+ICd0YXIuZ3onIG9yICd6aXAnLiIKICAgICAgICBleGl0IDEKICAgICAgICA7Owplc2FjCgojIENo
+ZWNrIGlmIHRoZSBiYWNrdXAgd2FzIHN1Y2Nlc3NmdWwKaWYgWyAkPyAtZXEgMCBdOyB0aGVuCiAg
+ICBlY2hvICJCYWNrdXAgc3VjY2Vzc2Z1bCEgWW91ciBtYWlsYm94IGRhdGEgaGFzIGJlZW4gc2F2
+ZWQuIgogICAgZWNobyAiQmFja3VwIGZpbGUgc2l6ZTogJChkdSAtaCAiJEZVTExfQkFDS1VQX1BB
+VEgiIHwgY3V0IC1mMSkiCmVsc2UKICAgIGVjaG8gIkVycm9yOiBCYWNrdXAgZmFpbGVkLiBQbGVh
+c2UgY2hlY2sgZm9yIGlzc3VlcyBhbmQgdHJ5IGFnYWluLiIKICAgIGV4aXQgMQpmaQoKZWNobyAi
+LS0tIEJhY2t1cCBwcm9jZXNzIGNvbXBsZXRlIC0tLSIKYGBg
+
+--===============3117152630832129178==--

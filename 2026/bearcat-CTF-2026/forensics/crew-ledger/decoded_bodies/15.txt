@@ -1,0 +1,16 @@
+From: Mad Maggie <maggie.maps@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>
+Date: 
+Subject: Strange weather patterns
+
+Ahoy, Captain,
+
+I've been keepin' a close eye on the skies and the currents these past few watches, and somethin' ain't right. The usual patterns for this region are all askew, and the winds are shiftin' in ways I've never seen before, not in all my years traversin' these seas.
+
+My compass is dancin' a jig of its own, and the stars... well, they just don't feel like they're in their proper places at night. It's makin' our current course feel less certain than I'd like, and I'm worried about what this could mean for our progress, or worse, our safety.
+
+I've logged all my observations in the attached file, weather_log.txt, hopin' it might shed some light on this peculiar turn of events.
+
+What be your thoughts, Captain? Should I lay in a new course, or keep us on our current bearings with extra vigilance?
+
+Mad Maggie

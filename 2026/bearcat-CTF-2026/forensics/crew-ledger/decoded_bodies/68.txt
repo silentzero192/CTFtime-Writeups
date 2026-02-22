@@ -1,0 +1,18 @@
+From: Admin <admin@scallywag.net>
+To: Silas The Shark Vane <silas@scallywag.net>
+Date: 
+Subject: Recovering deleted files
+
+Silas,
+
+Following your request regarding the retrieval of certain deleted files from the ship's server, I have completed the recovery process.
+
+The data you inquired about has been successfully retrieved from the system backups. I have compiled and compressed these files into an archive.
+
+You will find the recovered files attached as `recovered.zip`. Please ensure you handle these files securely and verify their contents.
+
+Should you require any further assistance or have questions about the recovery process, do not hesitate to contact me.
+
+Admin
+System Administrator
+scallywag.net

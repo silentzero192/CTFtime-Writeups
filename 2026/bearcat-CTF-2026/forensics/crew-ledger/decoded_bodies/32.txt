@@ -1,0 +1,16 @@
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>
+Date: 
+Subject: Instructions for VeraCrypt
+
+Captain,
+
+Following your inquiry regarding folder encryption, I've prepared a brief guide.
+
+I recommend using VeraCrypt for this purpose. It is a robust and widely-used tool that will allow you to create an encrypted container or encrypt an entire partition, ensuring your documents remain secure.
+
+I've attached a concise manual (`manual.txt`) that outlines the basic steps for setting up and using VeraCrypt to encrypt a folder or create a secure container. It covers installation, creating a new volume, and mounting/dismounting it.
+
+Please review the instructions carefully. If you encounter any difficulties or require further assistance, do not hesitate to contact me.
+
+Admin

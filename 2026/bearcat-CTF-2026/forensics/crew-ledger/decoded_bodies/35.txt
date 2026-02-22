@@ -1,0 +1,14 @@
+From: Silas The Shark Vane <silas@scallywag.net>
+To: Long-John Silver <silver@scallywag.net>
+Date: 
+Subject: Audit of the treasure chest
+
+Silver,
+
+Further to your report regarding the missing crates of gold, I have conducted an immediate audit of the main treasure chest and the surrounding storage areas.
+
+The attached `audit_report.xlsx` details my findings, including inventory discrepancies beyond the gold, a review of recent access logs, and an assessment of the security protocols in place.
+
+We need to discuss this as a matter of urgency. Be prepared to go over the report in detail and account for these variances.
+
+Silas.

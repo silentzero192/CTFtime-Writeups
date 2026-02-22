@@ -1,0 +1,14 @@
+From: Captain Bartholomew Black Hook <captain@scallywag.net>
+To: Admin <admin@scallywag.net>
+Date: 
+Subject: How do I encrypt a folder?
+
+Admin,
+
+I've got some sensitive documents I need to keep under wraps, even from prying eyes on this vessel.
+
+Could you tell me how to properly secure a particular folder on my system? I need to make sure its contents are... well, not easily accessed by anyone without my direct say-so. Encrypting it, I believe, is the term.
+
+Let me know the steps or if there's a particular trick to it.
+
+Captain.

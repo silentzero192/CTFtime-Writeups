@@ -1,0 +1,18 @@
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>
+Date: 
+Subject: SSH access enabled
+
+Captain,
+
+Following your request for secure remote access capabilities, I have enabled SSH (Secure Shell) access on your designated shipboard terminal.
+
+This will allow you to establish encrypted connections to remote systems, ensuring the confidentiality and integrity of your communications.
+
+Attached is your public SSH key, `id_rsa.pub`. You will need to add this key to the `~/.ssh/authorized_keys` file on any server or device you wish to access securely via SSH. This will enable passwordless, authenticated access.
+
+Please handle this key with appropriate care. If you require further assistance with its configuration or use, do not hesitate to contact me.
+
+Admin
+System Administrator
+scallywag.net

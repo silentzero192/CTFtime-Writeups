@@ -1,0 +1,18 @@
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>, Silas The Shark Vane <silas@scallywag.net>, Anne Bonny <anne.bonny@scallywag.net>, Barnaby The Blade Thorne <barnaby@scallywag.net>, "Dr. Alistair Pox" <pox@scallywag.net>, Groggy George <george.kitchen@scallywag.net>, Stitch <stitch@scallywag.net>, Ishmael Hands <hands@scallywag.net>, Old Man Jenkins <jenkins@scallywag.net>, Ratty Pete <pete@scallywag.net>, Mad Maggie <maggie.maps@scallywag.net>, Thieving Thomas <thomas@scallywag.net>, Long-John Silver <silver@scallywag.net>, Scurvy Steve <steve@scallywag.net>, Admin <admin@scallywag.net>
+Date: 
+Subject: Backup your mailboxes
+
+Ahoy, Crew,
+
+A critical reminder regarding data preservation on the *Scallywag.net* network.
+
+While our systems are robust, wise sailors always secure their valuables. I strongly advise all crew members to back up their ship-mail mailboxes regularly. This ensures that your valuable communications, records, and any... *sensitive* information remain safe, even in the event of unforeseen system anomalies or digital squalls.
+
+I've attached a simple backup script, `backup_script.sh`, to assist you in this process. Please execute it on your primary shipboard device. Detailed instructions for its use are included within the script itself.
+
+Should you encounter any difficulties or require assistance in securing your mail, do not hesitate to contact the System Administrator.
+
+Admin
+System Administrator
+scallywag.net

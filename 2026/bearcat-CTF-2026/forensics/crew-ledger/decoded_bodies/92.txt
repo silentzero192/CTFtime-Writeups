@@ -1,0 +1,16 @@
+From: Silas The Shark Vane <silas@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>, Silas The Shark Vane <silas@scallywag.net>, Anne Bonny <anne.bonny@scallywag.net>, Barnaby The Blade Thorne <barnaby@scallywag.net>, "Dr. Alistair Pox" <pox@scallywag.net>, Groggy George <george.kitchen@scallywag.net>, Stitch <stitch@scallywag.net>, Ishmael Hands <hands@scallywag.net>, Old Man Jenkins <jenkins@scallywag.net>, Ratty Pete <pete@scallywag.net>, Mad Maggie <maggie.maps@scallywag.net>, Thieving Thomas <thomas@scallywag.net>, Long-John Silver <silver@scallywag.net>, Scurvy Steve <steve@scallywag.net>, Admin <admin@scallywag.net>
+Date: 
+Subject: Post-Battle Supply Assessment: Losses
+
+Alright, you resilient lot!
+
+The dust has settled, and while we celebrate our victory, it's also time for a sober look at our stores after that brutal exchange. The *Scallywag* may be patched, but our provisions and essential supplies have taken a hit.
+
+I've conducted a thorough assessment, and the attached `lost_supplies.csv` details what we've lost or had compromised. This includes a significant portion of our hardtack and dried goods due to water ingress in the hold, as well as a good deal of rope and canvas that's beyond salvage. Our lime juice, already low, has been further reduced by spoilage from a leaky cask.
+
+This means we'll be running lean until our next port of call. I expect every man and woman to be mindful of their consumption. Waste will not be tolerated. Every drop of water, every biscuit, and every scrap of usable material is now precious.
+
+We'll manage, as always, but we'll do it by being smart and conserving what little we have left.
+
+Silas "The Shark" Vane

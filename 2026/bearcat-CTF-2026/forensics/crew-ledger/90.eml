@@ -1,0 +1,48 @@
+Subject: SSH access enabled
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew "Black" Hook <captain@scallywag.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3930967577124459492=="
+
+--===============3930967577124459492==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Captain,
+
+Following your request for secure remote access capabilities, I have enabled =
+SSH (Secure Shell) access on your designated shipboard terminal.
+
+This will allow you to establish encrypted connections to remote systems, ens=
+uring the confidentiality and integrity of your communications.
+
+Attached is your public SSH key, `id_rsa.pub`. You will need to add this key =
+to the `~/.ssh/authorized_keys` file on any server or device you wish to acce=
+ss securely via SSH. This will enable passwordless, authenticated access.
+
+Please handle this key with appropriate care. If you require further assistan=
+ce with its configuration or use, do not hesitate to contact me.
+
+Admin
+System Administrator
+scallywag.net
+
+--===============3930967577124459492==
+Content-Type: application/vnd.exstream-package
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="id_rsa.pub"
+MIME-Version: 1.0
+
+c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCZ1FESjZmQWtMOTQrS1d0SlhWMFJs
+M3lUQnNTOXZpL0w2L01SSU41Qy9uU0hJdW9QYU5jdk83Tkp0cjlveEhURWFISTIxSkRPTS82TXAy
+Rk11UkkvNllJeGlMekhkaVliT1ZRVllQZlRyWXdnMVRoZ0ZzZDBOSkxYMTRZRmhIR043T1RveEwx
+SVBSSisydnYzdFJpZ2lmV2loaFUvbjZHbDdmUkZjekpLY2duMHFVa2RFcXZjOG5Pc3luUlVtbEMr
+M1FBR3RlTGFQeVJRemFMaEYvNW4xbVFyNzNiMmVMOWdkdHptRVBiUWdUc0dadjhZTngwVW9zZUhT
+MUpESmJEcjNmdklSdFl5bkRobWFoQWlRUmhvdHFPRWRNNm5Zd1pad2RWYjMwV1oxcUE0TnFhSTU1
+SEt0UTFJSzhKVlNyS3FKYWZreVhJYVkzWDFic2x5U3pKTjB3dUN1cnN4Qi9zRHZXejRHR1I1Qnlq
+TmQwaVphWlFMTUx5M1FzbEhtZXJiNDNvbDBFMEQwb3BWYlFCczFLK240RnZvbE9pSDVOekJwY1NE
+OVdwM2t4WUc1WVY3ZGxLYm5GeFFWajVEMTNLV2pyOWJTeWFmTnhoUXQ2YkN0bDE5Nmpxc0pQdCs4
+elpUd01TbXl6ZDNURld2SEMvRXIzMmNFbG5iRTNxYkZBaGlYNkU9IGNhcHRhaW5Ac2NhbGx5d2Fn
+Lm5ldAo=
+
+--===============3930967577124459492==--

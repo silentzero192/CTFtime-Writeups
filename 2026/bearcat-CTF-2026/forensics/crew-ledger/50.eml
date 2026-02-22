@@ -1,0 +1,22 @@
+Subject: Suspicious login detected
+From: Admin <admin@scallywag.net>
+To: Thieving Thomas <thomas@scallywag.net>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Thomas,
+
+This is an automated security alert from the Scallywag.net system.
+
+A suspicious login attempt was detected on your ship-mail account (thomas@sca=
+llywag.net) approximately 15 minutes ago from an unrecognized device and loca=
+tion within the ship's network.
+
+For your security, your account has been temporarily locked. Please contact t=
+he System Administrator immediately to verify your identity and restore acces=
+s to your account. Do not attempt further logins until this issue is resolved.
+
+Admin
+System Administrator
+scallywag.net

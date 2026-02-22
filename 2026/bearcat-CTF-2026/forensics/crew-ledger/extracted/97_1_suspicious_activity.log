@@ -1,0 +1,68 @@
+**Timestamp: 1715-08-27 23:15:03**
+Event Type: LOGIN_ATTEMPT_FAILED
+User: thomas@scallywag.net
+Source IP: 192.168.1.104 (Deckhand Quarters Device)
+Details: Multiple failed login attempts (5) from unrecognized device/location. Account subsequently locked per security protocol.
+
+**Timestamp: 1715-08-28 01:47:11**
+Event Type: ACCESS_DENIED
+User: UNKNOWN
+Target: /ship_manifests/treasure_manifest.db (Restricted)
+Details: Attempted access to restricted treasure manifest database. Connection terminated.
+
+**Timestamp: 1715-08-28 01:47:35**
+Event Type: FILE_READ_ATTEMPT
+User: UNKNOWN
+Target: /ship_manifests/treasure_manifest.db (Restricted)
+Details: Second attempt to read treasure manifest. Connection terminated again. (Possible brute-force or unauthorized key use attempt)
+
+**Timestamp: 1715-08-28 03:01:50**
+Event Type: ADMIN_PASSWORD_RESET_REQUEST
+User: captain@scallywag.net
+Details: Password reset requested for Captain's account. Authenticated via secondary channel.
+
+**Timestamp: 1715-08-28 04:22:07**
+Event Type: DIRECTORY_ACCESS
+User: silver@scallywag.net
+Target: /ship_hold_inventory/gold_crates_archive/
+Details: Access to historical gold crate manifest archive. Standard access, but unusual timing (early morning).
+
+**Timestamp: 1715-08-28 04:23:45**
+Event Type: FILE_DELETED
+User: silver@scallywag.net
+Target: /ship_hold_inventory/current_gold_crates_log.txt
+Details: Deletion of 'current_gold_crates_log.txt'. No prior 'DELETE' command expected for this file without Quartermaster authorization.
+
+**Timestamp: 1715-08-28 10:18:22**
+Event Type: SYSTEM_SCAN_INITIATED
+User: admin@scallywag.net
+Details: Full system integrity scan initiated by Admin.
+
+**Timestamp: 1715-08-28 14:05:59**
+Event Type: ACCESS_DENIED
+User: UNKNOWN
+Target: /restricted_quarters/captain_logs/
+Details: Attempted access to Captain's restricted logs. IP address traced to a common-area terminal, but user not logged.
+
+**Timestamp: 1715-08-28 18:30:15**
+Event Type: FILE_MODIFIED
+User: thomas@scallywag.net
+Target: /crew_rosters/thomas_duties.log
+Details: Minor modification to personal duty log. Suspect this may be a test of compromised access rather than direct task.
+
+**Timestamp: 1715-08-29 00:00:00 - 02:00:00**
+Event Type: SERVER_MAINTENANCE_DOWNTIME
+User: admin@scallywag.net
+Details: Scheduled server maintenance. No logs available during this window.
+
+**Timestamp: 1715-08-29 02:35:19**
+Event Type: ACCESS_GRANTED
+User: captain@scallywag.net
+Target: /private/encrypted_volume/
+Details: Successful mount of VeraCrypt volume `Captain_Secrets.hc`.
+
+**Timestamp: 1715-08-29 04:11:04**
+Event Type: FILE_UPLOAD
+User: silver@scallywag.net
+Target: /ship_hold_inventory/supplemental_treasure_report.xlsx
+Details: Upload of a new spreadsheet, ostensibly a supplemental report. Contains entries contradictory to previous manifests.

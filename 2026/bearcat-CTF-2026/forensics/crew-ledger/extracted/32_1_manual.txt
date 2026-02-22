@@ -1,0 +1,73 @@
+**VeraCrypt Basic Usage Manual for Captain's Secure Storage**
+
+This guide provides a basic overview for using VeraCrypt to protect your sensitive documents. VeraCrypt creates encrypted 'containers' – files that act like virtual hard drives – which can only be accessed with the correct password.
+
+---
+
+**Step 1: Installation (If not already installed)**
+*   Locate the VeraCrypt installer on your ship's designated software drive (likely mounted as "SYS_TOOLS").
+*   Run the installer. Choose "Install" for a permanent installation.
+*   Follow the on-screen prompts. Accept the default options unless you understand the implications of changing them.
+*   Restart your system if prompted.
+
+---
+
+**Step 2: Creating a New Encrypted Volume (Your Secure Folder)**
+
+1.  **Launch VeraCrypt:** Find the VeraCrypt application in your system's programs menu and open it.
+2.  **Select "Create Volume":** This option will start the wizard for making a new encrypted container.
+3.  **Choose Volume Type:**
+    *   Select "Create an encrypted file container." This is like creating a secure, password-protected folder on your existing drive.
+    *   Click "Next."
+4.  **Select Volume Location:**
+    *   Choose "Standard VeraCrypt volume." (Hidden volumes are for advanced users).
+    *   Click "Next."
+5.  **Specify Volume File Location:**
+    *   Click "Select File..." and navigate to a location on your hard drive where you want this encrypted container *file* to reside (e.g., "My Documents").
+    *   Give your container a name (e.g., `Captain_Secrets.hc`). The `.hc` extension is common for VeraCrypt containers, but you can use any.
+    *   Click "Save," then "Next."
+6.  **Encryption Options:**
+    *   Leave "Encryption Algorithm" as `AES`.
+    *   Leave "Hash Algorithm" as `SHA-512`. These are strong defaults.
+    *   Click "Next."
+7.  **Specify Volume Size:**
+    *   Enter the size you wish your secure container to be (e.g., `500` MB for 500 Megabytes, or `2` GB for 2 Gigabytes). This is the maximum amount of data it can hold. Choose a size appropriate for your documents.
+    *   Click "Next."
+8.  **Set Volume Password:**
+    *   **CRITICAL STEP:** Enter a strong, unique password. Make it long, use a mix of upper/lower case letters, numbers, and symbols. **DO NOT FORGET THIS PASSWORD.** VeraCrypt offers no recovery for lost passwords.
+    *   Re-enter the password to confirm.
+    *   Click "Next."
+9.  **Format Volume:**
+    *   Move your mouse randomly within the VeraCrypt window for at least 30 seconds. This generates cryptographic randomness.
+    *   Click "Format." This will create the encrypted container file.
+    *   Once complete, click "OK" and then "Exit."
+
+---
+
+**Step 3: Mounting (Opening) Your Encrypted Volume**
+
+1.  **Launch VeraCrypt.**
+2.  **Select a Drive Letter:** In the main VeraCrypt window, choose an available drive letter (e.g., `F:` or `G:`). This letter will represent your encrypted container once it's open.
+3.  **Select Volume File:** Click the "Select File..." button and browse to the encrypted container file you created (e.g., `Captain_Secrets.hc`).
+4.  **Click "Mount":** You will be prompted to enter your password.
+5.  **Enter Password:** Type the exact password you set in Step 2, Sub-step 8.
+6.  **Access Files:** If the password is correct, your encrypted volume will now appear as a new drive (e.g., `F:`) in "My Computer" or "This PC." You can now save files into it or retrieve files from it, just like any other folder or drive. All data placed here will be automatically encrypted.
+
+---
+
+**Step 4: Dismounting (Closing) Your Encrypted Volume**
+
+1.  **Close all files and programs** that are accessing the mounted encrypted volume (e.g., `F:`).
+2.  **Launch VeraCrypt.**
+3.  **Select the Mounted Volume:** In the main VeraCrypt window, select the drive letter corresponding to your encrypted volume (e.g., `F:`).
+4.  **Click "Dismount":** The volume will close, and its contents will become inaccessible without the password.
+
+---
+
+**Important Reminders:**
+
+*   **Password Security:** Your password is the *only* key. Lose it, and your data is lost forever. Write it down, but secure that note better than a buried treasure map.
+*   **Dismount When Done:** Always dismount your encrypted volume when you are finished using it, especially if you step away from your terminal. This keeps your data secure.
+*   **Backups:** Encrypted files can still be corrupted. Back up your encrypted container file (`Captain_Secrets.hc`) regularly to another secure location.
+
+Should you encounter any difficulties, or if the digital tides prove too strong, please do not hesitate to contact the System Administrator.

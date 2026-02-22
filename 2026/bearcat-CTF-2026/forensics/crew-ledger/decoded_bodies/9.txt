@@ -1,0 +1,16 @@
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>
+Date: 
+Subject: Resetting your ship-mail password
+
+Captain "Black" Hook,
+
+This is a system-generated notification regarding your ship-mail account.
+
+Your password for captain@scallywag.net has been reset. For security purposes, a temporary password has been sent to your designated secondary recovery channel. Please use this temporary password to log in and then promptly change it to a new, strong password of your choosing.
+
+If you did not request this password reset, please contact the System Administrator immediately.
+
+Admin
+System Administrator
+scallywag.net

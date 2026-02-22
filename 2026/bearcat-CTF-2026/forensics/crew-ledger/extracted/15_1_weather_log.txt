@@ -1,0 +1,35 @@
+Weather Log - The Scallywag
+
+Navigator: Mad Maggie
+Date: [Current Date, e.g., Day 18 of the 7th Moon, Year of Our Lord...]
+Time of Last Entry: [Current Time, e.g., 04:00 AM]
+
+---
+
+**Observations for the Past 72 Hours:**
+
+**Day -3:**
+*   **08:00:** Clear skies, light easterly breeze (Force 2). Sun bearing strong. Standard tropical conditions.
+*   **16:00:** Wind shifting slightly to ENE (Force 3). Swell building unexpectedly from the south.
+*   **22:00:** Stars unusually dim, a faint haze despite clear sky. No moon. Compass reading fluctuating by a degree or two, then stabilizing.
+
+**Day -2:**
+*   **04:00:** Wind picked up sharply from the SSE (Force 4-5) for a brief period (approx. 2 hours), then died down to E (Force 2). Highly unusual for this region at this time of year.
+*   **10:00:** Sky overcast rapidly, grey and heavy, but no rain. Humidity unusually high. Sea state choppy, confused swell from multiple directions.
+*   **18:00:** Magnetic deviation on compass showing sporadic, minor shifts. Not constant, but enough to be noted. Tried recalibration, no lasting effect.
+*   **23:00:** Brief, intense squall (Force 6-7) from the SW. Lasted less than an hour, then dissipated abruptly. Stars still seem... wrong, even when briefly visible. Their positions feel slightly off my expected alignments.
+
+**Day -1:**
+*   **06:00:** Sky clear again, but sun feels less warm than usual. Wind variable, shifting between E, SE, and S (Force 2-3).
+*   **12:00:** Water temperature appears to have dropped a few degrees. Not drastically, but noticeably cooler than expected for these latitudes.
+*   **19:00:** Observed strange light refraction at sunset – colors unusually vibrant, then fading quickly to a dull grey.
+*   **Midnight:** Stars completely obscured by an unnatural, almost static layer of thin cloud. No wind, but a low, deep hum or vibration felt through the hull intermittently. Compass again showing minor, quick fluctuations.
+
+**Current Status:**
+*   Atmosphere: Heavy, muggy.
+*   Wind: Variable, almost non-existent.
+*   Sea: Unsettled, with a persistent, low swell.
+*   Visibility: Clear, but with a strange, almost unnatural stillness.
+*   Navigation: Relying heavily on dead reckoning and careful lead line soundings. Celestial navigation proving unreliable due to star visibility and compass anomalies.
+
+**Concerns:** The rapid, unpredictable shifts in wind and swell, the consistent geomagnetic anomalies, and the obscured celestial sphere point to something beyond typical tropical weather. It feels... forced, unnatural. Maintaining our precise course is becoming a gamble.

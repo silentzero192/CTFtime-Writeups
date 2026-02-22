@@ -1,0 +1,16 @@
+From: Admin <admin@scallywag.net>
+To: Captain Bartholomew Black Hook <captain@scallywag.net>, Silas The Shark Vane <silas@scallywag.net>, Anne Bonny <anne.bonny@scallywag.net>, Barnaby The Blade Thorne <barnaby@scallywag.net>, "Dr. Alistair Pox" <pox@scallywag.net>, Groggy George <george.kitchen@scallywag.net>, Stitch <stitch@scallywag.net>, Ishmael Hands <hands@scallywag.net>, Old Man Jenkins <jenkins@scallywag.net>, Ratty Pete <pete@scallywag.net>, Mad Maggie <maggie.maps@scallywag.net>, Thieving Thomas <thomas@scallywag.net>, Long-John Silver <silver@scallywag.net>, Scurvy Steve <steve@scallywag.net>, Admin <admin@scallywag.net>
+Date: 
+Subject: CONNECTION TERMINATED
+
+Attention, All Crew.
+
+This is an automated system notification.
+
+Effective immediately, all network services and ship-mail functionality for the scallywag.net domain have been terminated. All active connections are now severed.
+
+Further communication via this system is no longer possible.
+
+Admin
+System Administrator
+scallywag.net
