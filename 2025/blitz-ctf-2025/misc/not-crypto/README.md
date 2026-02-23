@@ -1,7 +1,7 @@
 # CTF Writeup
 
 **Challenge Name:** Not Crypto  
-**Platform:** Blitz CTF 2025
+**Platform:** Blitz CTF 2025  
 **Category:** Misc  
 **Difficulty:** Medium  
 **Time Spent:** ~30 minutes  
