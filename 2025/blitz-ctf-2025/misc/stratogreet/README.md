@@ -1,7 +1,7 @@
 # CTF Writeup
 
 **Challenge Name:** stratogreet  
-**Platform:** Blitz CTF 2025
+**Platform:** Blitz CTF 2025  
 **Category:** Misc  
 **Difficulty:** Easy  
 **Time Spent:** ~25 minutes  
