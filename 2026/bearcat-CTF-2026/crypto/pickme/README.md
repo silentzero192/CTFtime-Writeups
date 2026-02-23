@@ -1,6 +1,6 @@
 # CTF Writeup
 
-**Challenge Name:** pickme  
+**Challenge Name:** Pickme  
 **Event:** Bearcat CTF 2026  
 **Category:** Cryptography (RSA key validation bug)
 

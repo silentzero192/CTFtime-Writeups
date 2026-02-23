@@ -1,8 +1,10 @@
-Challenge Name: Secret Spyglass
-Platform: Bearcat CTF 2026
-Category: Pwn
-Difficulty: Easy
-Time spent: ~20 minutes
+# CTF Writeup
+
+**Challenge Name:** Secret Spyglass
+**Platform:** Bearcat CTF 2026
+**Category:** Pwn
+**Difficulty:** Easy
+**Time spent:** ~20 minutes
 
 ## 1) Goal (What was the task?)
 The binary asks for a numeric guess and compares it against a secret random number from `/dev/urandom`.  

@@ -4,7 +4,6 @@
 **Platform:** Bearcat CTF 2026  
 **Category:** Misc / Scripting  
 **Difficulty:** Medium  
-**Time spent:** ~1 hour
 
 ## 1) Goal (What was the task?)
 The service runs a solo battleship game at `nc chal.bearcatctf.io 45457`.  

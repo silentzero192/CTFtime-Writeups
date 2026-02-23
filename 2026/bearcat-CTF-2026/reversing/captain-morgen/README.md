@@ -1,4 +1,4 @@
-# CTF Writeup (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
 **Challenge Name:** Captain Morgan  
 **Platform:** Bearcat CTF 2026  

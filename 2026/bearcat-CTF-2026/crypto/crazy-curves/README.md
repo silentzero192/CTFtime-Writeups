@@ -1,10 +1,9 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
-Challenge Name: crazy curves  
-Platform: Bearcat CTF 2026 (BCCTF)  
-Category: Crypto  
-Difficulty: Medium  
-Time spent: ~45 minutes
+**Challenge Name:** Crazy Curves  
+**Platform:** Bearcat CTF 2026  
+**Category:** Crypto  
+**Difficulty:** Medium  
 
 ## 1) Goal (What was the task?)
 The task was to recover the real shared secret from a custom elliptic-like key exchange implementation and decrypt the ciphertext in `output.txt`.  

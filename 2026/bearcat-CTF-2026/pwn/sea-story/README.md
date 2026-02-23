@@ -1,10 +1,10 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
-Challenge Name: Sea Story  
-Platform: Bearcat CTF 2026  
-Category: Pwn  
-Difficulty: Medium  
-Time spent: ~35 minutes
+**Challenge Name:** Sea Story  
+**Platform:** Bearcat CTF 2026  
+**Category:** Pwn  
+**Difficulty:** Medium  
+**Time spent:** ~35 minutes
 
 ## 1) Goal (What was the task?)
 The task was to exploit a remote binary service at `chal.bearcatctf.io:40385` and make it reveal the challenge flag.  

@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
-Challenge Name: The Brig  
-Platform: Bearcat CTF  
-Category: Misc (Python jail / eval abuse)  
-Difficulty: Easy  
-Time spent: ~25 minutes
+**Challenge Name:** The Brig  
+**Platform:** Bearcat CTF  
+**Category:** Misc (Python jail / eval abuse)  
 
 ## 1) Goal (What was the task?)
 The service gives two prompts and heavily restricts input symbols.  

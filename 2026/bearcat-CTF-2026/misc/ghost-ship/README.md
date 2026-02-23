@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
-Challenge Name: Ghost Ship  
-Platform: Bearcat CTF 2026 (BCCTF)  
-Category: Misc / Reversing  
-Difficulty: Easy  
-Time spent: ~40 minutes
+**Challenge Name:** Ghost Ship  
+**Platform:** Bearcat CTF 2026  
+**Category:** Misc / Reversing  
 
 ## 1) Goal (What was the task?)
 The challenge gave one file named `ghost_ship` and a story about symbols on parchment.  

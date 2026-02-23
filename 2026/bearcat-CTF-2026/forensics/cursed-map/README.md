@@ -1,4 +1,4 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
 **Challenge Name:** Cursed Map  
 **Platform:** Bearcat CTF 2026  

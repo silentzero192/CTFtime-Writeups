@@ -1,6 +1,6 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
-**Challenge Name:** gambl  
+**Challenge Name:** Gambl  
 **Platform:** Bearcat CTF 2026  
 **Category:** Pwn  
 **Difficulty:** Easy  

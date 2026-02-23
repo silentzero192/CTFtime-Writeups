@@ -1,6 +1,6 @@
 # CTF Writeup
 
-**Challenge Name:** kidds-crypto  
+**Challenge Name:** Kidds Crypto  
 **Event:** Bearcat CTF 2026  
 **Category:** Cryptography (Low-exponent RSA with known small factors)
 

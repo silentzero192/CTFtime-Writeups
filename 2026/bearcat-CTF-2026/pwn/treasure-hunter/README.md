@@ -1,10 +1,10 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
-Challenge Name: Treasure Hunter  
-Platform: Bearcat CTF 2026  
-Category: Pwn  
-Difficulty: Easy  
-Time spent: ~30 minutes
+**Challenge Name:** Treasure Hunter  
+**Platform:** Bearcat CTF 2026  
+**Category:** Pwn  
+**Difficulty:** Easy  
+**Time spent:** ~30 minutes
 
 ## 1) Goal (What was the task?)
 The binary asks for a pirate name and a treasure location, then prints a failure message unless you can redirect execution to a hidden `win` function.  
