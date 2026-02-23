@@ -1,7 +1,7 @@
 # CTF Writeup
 
 **Challenge Name:** Essay  
-**Platform:** Blitz CTF 2025
+**Platform:** Blitz CTF 2025  
 **Category:** Forensics  
 **Difficulty:** Easy  
 **Time Spent:** ~35 minutes  
