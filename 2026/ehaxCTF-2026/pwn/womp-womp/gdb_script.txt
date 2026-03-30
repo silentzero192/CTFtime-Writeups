@@ -1,0 +1,8 @@
+set pagination off
+set follow-fork-mode child
+break *emit_report
+run
+info registers
+x/10gx $rsp
+bt
+continue

@@ -1,0 +1,1 @@
+The break came from the structure in cipher.py: the ring uses N=80, which leaks a smaller x^16+1 subring, and the public key in key.pub also has a zeroed A[0,1] entry modulo q. That let me recover a valid small surrogate secret row-by-row with lattice reduction and decrypt flag.txt.enc successfully.
