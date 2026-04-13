@@ -1,0 +1,9 @@
+characters:
+    G!{Qq)EPU-M7yNAKnF%fS=\Z?;+.T2/8Lx65'@*VBw,#k:|~Dr`eOa9H"hb>3^<Jp}[&$iXogzl4vWu(tsc]1YmC_RI0jd
+parameters:
+    m1 = 95
+    m2 = 37
+    m3 = 19
+    s1 = 11
+    s2 = 29
+    s3 = 7

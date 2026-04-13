@@ -1,0 +1,13 @@
+services:
+  keepnotes:
+    container_name: "keepnotes"
+    build:
+      context: .
+    ports:
+      - "3031:3031"
+    environment:
+      SESSION_SECRET: meowmeowmeow
+      FLAG: RS{meow_meow_fake_flag}
+      SITE: http://localhost:3031
+    platform: linux/amd64
+    restart: unless-stopped

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dompurify": "^3.3.3",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "jsdom": "^29.0.1",
+    "puppeteer": "^24.40.0"
+  }
+}

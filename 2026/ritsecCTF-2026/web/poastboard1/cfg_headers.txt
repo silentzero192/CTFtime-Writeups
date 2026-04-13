@@ -1,0 +1,7 @@
+HTTP/1.1 302 Found
+location: /
+set-cookie: session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0IiwidXNlcm5hbWUiOiJjZmdyZWFkMTIzNDU2In0.bhujXA33Byu4ejgO_6uqlGRBt9jOXG7vlnqo2bg1CYM; Path=/; Expires=Mon, 06 Apr 2026 12:57:12 GMT; HttpOnly; SameSite=Strict
+date: Sun, 05 Apr 2026 12:57:12 GMT
+content-length: 0
+set-cookie: 07231c684121f49babbcc49f2ffb7e39=477131f767bcf145961b5075af0fec85; path=/; HttpOnly; Secure; SameSite=None
+

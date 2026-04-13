@@ -1,0 +1,7 @@
+services:
+  poastboard:
+    build: .
+    ports:
+      - 8080:8080
+    container_name: poastboard
+    restart: always

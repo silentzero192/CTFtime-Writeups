@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>keep notes!!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+    /* CSS provided courtesy of Claude, as far as I know it has no effect on the solution - sylvie */
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+        --bg: #0c0c0f;
+        --surface: #16161a;
+        --surface-hover: #1c1c22;
+        --border: #2a2a33;
+        --text: #e2e2e8;
+        --text-dim: #72727e;
+        --accent: #7b6fed;
+        --accent-dim: #7b6fed22;
+        --danger: #e05252;
+        --mono: 'IBM Plex Mono', monospace;
+        --sans: 'IBM Plex Sans', sans-serif;
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--sans);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    header {
+        margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+        font-family: var(--mono);
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--accent);
+        letter-spacing: -0.02em;
+    }
+
+    header h1 span { color: var(--text-dim); }
+
+    .panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .panel-label {
+        font-family: var(--mono);
+        font-size: 0.7rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-dim);
+        margin-bottom: 0.75rem;
+    }
+
+    textarea, input[type="text"], input[type="url"] {
+        width: 100%;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        color: var(--text);
+        font-family: var(--mono);
+        font-size: 0.85rem;
+        padding: 0.65rem 0.75rem;
+        outline: none;
+        transition: border-color 0.15s;
+        resize: vertical;
+    }
+
+    textarea:focus, input:focus {
+        border-color: var(--accent);
+    }
+
+    textarea { min-height: 80px; }
+
+    .input-row {
+        display: flex;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+
+    .input-row input { flex: 1; }
+
+    button {
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        font-weight: 500;
+        padding: 0.6rem 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.15s, opacity 0.15s;
+        white-space: nowrap;
+    }
+
+    .btn-primary {
+        background: var(--accent);
+        color: #fff;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+
+    .btn-ghost {
+        background: var(--accent-dim);
+        color: var(--accent);
+    }
+    .btn-ghost:hover { background: #7b6fed33; }
+
+    #notes-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+    .note-card {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 0.7rem 0.85rem;
+        font-size: 0.88rem;
+        line-height: 1.5;
+        word-break: break-word;
+        animation: fadeIn 0.2s ease;
+    }
+
+    .empty-state {
+        text-align: center;
+        color: var(--text-dim);
+        font-size: 0.82rem;
+        padding: 2rem 0;
+        font-family: var(--mono);
+    }
+
+    .toast {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(1rem);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--text);
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s, transform 0.25s;
+    }
+
+    .toast.show {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+        color: white;
+    }
+
+    .toast.error { border-color: var(--danger); color: var(--danger); }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(4px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>keep notes!!</h1>
+  </header>
+
+  <div class="panel">
+    <div class="panel-label">new note</div>
+    <textarea id="note-input" placeholder="write something..."></textarea>
+    <div style="margin-top:0.6rem; display:flex; justify-content:flex-end;">
+      <button class="btn-primary" onclick="addNote()">save</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">my notes</div>
+    <div class="input-row">
+      <input type="text" id="search-input" placeholder="search..." oninput="fetchNotes().then(r=>renderNotes(r))">
+    </div>
+    <div id="notes-list"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">report url</div>
+    <div class="input-row">
+      <input type="url" id="url-input" placeholder="https://...">
+      <button class="btn-ghost" onclick="reportURL()">report</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+    const notes = document.getElementById('notes-list')
+    const note = document.getElementById('note-input')
+    const search = document.getElementById('search-input')
+    const url = document.getElementById('url-input')
+    const toastBox = document.getElementById('toast')
+
+
+    let toastTimer;
+    function toast(msg, error) {
+        toastBox.textContent = msg
+        toastBox.className = 'toast show' + (error ? ' error' : '')
+        clearTimeout(toastTimer)
+        toastTimer = setTimeout(() => toastBox.className = 'toast', 2200)
+    }
+
+    function getQuery(){
+        const q = search.value.trim()
+        const query = (new URLSearchParams(window.location.search)).get('search')
+        return q ? q : (query ? query : '')
+    }
+
+    async function main() {
+        renderNotes(localStorage.getItem('notes') ? localStorage.getItem('notes') : await fetchNotes())
+    }
+
+    async function fetchNotes() {
+        const q = search.value.trim()
+        const search_url = '/api/notes?'+getQuery()
+        try {
+            const res = await fetch(search_url)
+            const data = await res.text()
+            return data
+        } catch { return '' }
+    }
+
+    function renderNotes(new_notes) {
+        localStorage.setItem('notes', new_notes)
+        const new_notes_split = new_notes.split('[SEP]')
+        notes.replaceChildren()
+        if (!new_notes_split.length || new_notes.length == 0) {
+            const empty = document.createElement('a')
+            empty.className = 'empty-state'
+            empty.id = 'note-none'
+            empty.textContent = 'no notes yet'
+            notes.appendChild(empty)
+            return
+        }
+        for (const [i, n] of (getQuery() ? new_notes_split.filter((n) => {return n.includes(getQuery())}).sort() : new_notes_split).entries()) {
+            const card = document.createElement('a')
+            card.className = 'note-card'
+            card.id = `note-${i}`
+            card.href = `/?search=${n}`
+            card.textContent = n
+            notes.appendChild(card)
+        }
+    }
+
+    async function addNote() {
+        const q = search.value.trim()
+        const new_note = note.value.trim();
+        if (!new_note) return toast('write something first', true)
+        try {
+        const res = await fetch('/api/notes?'+getQuery(), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ note: new_note })
+        })
+        if (!res.ok) { toast('failed to save', true); return }
+        const data = await res.text()
+        note.value = ''
+        toast('saved')
+        renderNotes(data)
+        } catch (e) { toast('network error', true); console.log(e) }
+    }
+
+    async function reportURL() {
+        const report_url = url.value.trim();
+        if (!report_url) return toast('enter a url', true)
+        try {
+            const res = await fetch('/api/bot', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: report_url })
+        })
+        if (!res.ok) { toast('failed to report', true); return }
+        url.value = ''
+        toast('reported to admin');
+        } catch { toast('network error', true) }
+    }
+
+    note.addEventListener('keydown', e => {
+        if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) addNote();
+    })
+
+  main()
+</script>
+</body>
+</html>
