@@ -1,24 +1,26 @@
-CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
-Challenge Name: Routine Checks
-Platform: aproovCTF (forensics)
-Category: Forensics
-Difficulty: Medium
-Time spent: ~2 hrs
+# CTF Writeup 
+**Challenge Name**: Routine Checks
+**Platform**: aproovCTF (forensics)
+**Category**: Forensics
 
-1) Goal (What was the task?)
+## Goal (What was the task?)
+
 - The challenge asked me to inspect the provided `challenge.pcap`, determine which communication carried a hidden payload, and extract the real flag of the format `apoorvctf{...}`.
 
-2) Key Clues (What mattered?)
+## Key Clues (What mattered?)
+
 - Prompt referenced “routine checks”, “status updates”, and “one message stands out”.
 - Available file `challenge.pcap` contained SIP traffic plus a much larger TCP stream with printable data.
 - Strings like `JFIF` and repeated status phrases pointed to embedded media in a TCP stream.
 
-3) Plan (Your first logical approach)
+## Plan (Your first logical approach)
+
 - Start by scanning `challenge.pcap` with `tshark`/`strings` to identify unusual payloads beyond normal SIP status strings.
 - Focus on the largest TCP stream, dump its payload, and look for signatures (`JFIF`) indicating hidden media.
 - If an image is recovered, brute-force any embedded steganographic data (metadata tools, `steghide`, QR scanners).
 
-4) Steps (Clean execution)
+## Steps (Clean execution)
+
 1. `tshark -r challenge.pcap -q -z follow,tcp,ascii,1` → Revealed stream 1 carries a 5.7 KB payload that started with JPEG headers except for one missing `0xFF`.
    - Result: saved payload, prefixed with `0xFF`, produced valid JPEG image.
    - Decision: Image looked like a QR code, so I decoded it with `zbarimg`.

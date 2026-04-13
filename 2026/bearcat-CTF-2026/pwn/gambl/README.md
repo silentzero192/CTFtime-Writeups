@@ -3,10 +3,8 @@
 **Challenge Name:** Gambl  
 **Platform:** Bearcat CTF 2026  
 **Category:** Pwn  
-**Difficulty:** Easy  
-**Time spent:** ~35 minutes
-
 ## 1) Goal (What was the task?)
+
 The challenge asked me to find an "infinite money glitch" in a gambling simulator and buy the flag in-game.  
 Success condition was reaching enough money to use option `4) Buy Flag`, then receiving a flag in format `BCCTF{...}`.
 

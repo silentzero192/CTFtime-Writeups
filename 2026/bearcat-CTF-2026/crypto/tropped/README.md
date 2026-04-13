@@ -36,7 +36,7 @@ cd tropped && python solve.py
 
 ## 5) Result
 
-- Flag: `BCCTF{1_h4T3_M7_Tr0p93D_4Hh_CRyp705ysT3m}`
+- `Flag`:`BCCTF{1_h4T3_M7_Tr0p93D_4Hh_CRyp705ysT3m}`
 - The decrypted text emerges precisely because `aM` and `Mb` together leak the value needed to reconstruct `a ⊗ M ⊗ b`.
 
 ## 6) Lessons learned

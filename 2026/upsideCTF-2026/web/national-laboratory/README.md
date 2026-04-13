@@ -1,10 +1,8 @@
 # Door No. 8005 Writeup
 
-Challenge Name: Door No. 8005  
-Platform: UpSide CTF 2026  
-Category: Web  
-Difficulty: Easy  
-Time spent: ~10 minutes
+**Challenge Name**: Door No. 8005  
+**Platform**: UpSide CTF 2026  
+**Category**: Web  
 
 ## 1) Goal (What was the task?)
 The objective was to access a remote Hawkins terminal exposed on `140.245.25.63:8005`, find a way past the internal-only restriction, and recover the flag. Success meant interacting with the service and extracting the final flag in the `CTF{...}` format.

@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Pwn CTF Challenge Writeup 
 
 **Challenge Name:** login  
 **Platform:** VolgaCTF 2026 Quals  
 **Category:** Pwn  
-**Difficulty:** Hard  
-**Time spent:** About 1 hour
 
 ## 1) Goal (What was the task?)
 The goal was to analyze the provided challenge binary, exploit the remote service at `login-1.q.2026.volgactf.ru:45003`, and recover the flag. Success meant getting code execution or another file-read primitive on the server and extracting a flag in the format `VolgaCTF{...}`.

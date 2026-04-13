@@ -1,10 +1,8 @@
 # CTF Writeup
 
-Challenge Name: not drawing  
-Platform: texsawCTF 2026  
-Category: Reversing  
-Difficulty: Easy  
-Time spent: ~50 minutes
+**Challenge Name**: not drawing  
+**Platform**: texsawCTF 2026  
+**Category**: Reversing  
 
 ## 1) Goal (What was the task?)
 
@@ -71,17 +69,3 @@ The key idea was noticing that the binary was not hiding the flag as a string. I
 - `xxd -s OFFSET -l SIZE binary` -> inspect headers, tables, and raw asset regions
 - Capstone / lightweight disassembly -> useful for tracing a few important functions without opening a full GUI tool
 - Pattern to remember: if a challenge mentions drawing, screen, shader, or graphics, check for hidden vertex data, textures, or a render-then-clear bug early
-
-## Reproduction
-
-Run the included solver from the challenge directory:
-
-```bash
-python3 solution.py
-```
-
-It prints:
-
-```text
-texsaw{2switch1918402350923}
-```

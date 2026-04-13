@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Web CTF Challenge Writeup 
 
 **Challenge Name:** The Mindflayer's Gambit  
 **Platform:** Upside CTF 2026  
-**Category:** Web  
-**Difficulty:** Easy  
-**Time spent:** ~25 minutes
+**Category:** Web 
 
 ## 1) Goal (What was the task?)
 The challenge presented a chess web app where the "Mindflayer" engine was supposed to be impossible to beat normally. The goal was to recover the flag in the format `CTF{...}` by exploiting the app rather than winning a real chess game.
@@ -50,7 +48,7 @@ The challenge presented a chess web app where the "Mindflayer" engine was suppos
    **Decision:** Try a derived key instead of the raw word.
 
 6. **Action:** XORed the ciphertext with `sha256("vecna")`.  
-   **Result:** The plaintext decoded cleanly to `CTF{mindflayer_resigned}`.  
+   **Result:** The plaintext decoded cleanly to flag. 
    **Decision:** This matched the required flag format, so it was the final answer.
 
 ## 5) Solution Summary (What worked and why?)

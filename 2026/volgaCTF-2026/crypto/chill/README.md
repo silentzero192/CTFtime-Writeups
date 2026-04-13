@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Crypto CTF Challenge Writeup 
 
-Challenge Name: chill  
-Platform: VolgaCTF 2026  
-Category: Crypto  
-Difficulty: Medium  
-Time spent: ~15 minutes
+**Challenge Name**: chill  
+**Platform**: VolgaCTF 2026  
+**Category**: Crypto  
 
 ## 1) Goal (What was the task?)
 The challenge gave us a Sage script and an output file, then asked us to recover a secret key. In this case, the private key was the flag itself, so success meant reconstructing that key and reading the final `VolgaCTF{...}` string.

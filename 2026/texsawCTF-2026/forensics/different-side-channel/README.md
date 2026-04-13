@@ -1,12 +1,10 @@
-# different side channel
+# Different Side Channel Writeup
 
-Challenge Name: different side channel  
-Platform: TexSAW CTF 2026  
-Category: Forensics  
-Difficulty: Medium  
-Time spent: About 20 minutes
-
+**Challenge Name**: Different Side Channel  
+**Platform**: TexSAW CTF 2026  
+**Category**: Forensics 
 ## 1) Goal (What was the task?)
+
 We were given 500 power traces from a hardware AES encryption device, along with the 16-byte plaintext used for each trace and an encrypted flag file.  
 The goal was to recover the unknown AES key from the side-channel leakage, decrypt the flag, and output it in the format `texsaw{...}`.
 

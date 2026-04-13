@@ -1,11 +1,8 @@
-# CTF Writeup
+# Misc CTF Challenge Writeup
 
-Challenge Name: Excellent Neurons  
-Platform: texsawCTF 2026  
-Category: Reversing / Misc  
-Difficulty: Medium  
-Time spent: ~25 minutes
-
+**Challenge Name**: Excellent Neurons  
+**Platform**: TexsawCTF 2026  
+**Category**: Reversing / Misc  
 ## 1) Goal (What was the task?)
 
 The challenge gave me an Excel workbook and said the flag could be found by reverse engineering a neural network stored inside it. Success meant recovering a valid flag in the format `texsaw{...}` and confirming the workbook would evaluate it as `FLAG`.

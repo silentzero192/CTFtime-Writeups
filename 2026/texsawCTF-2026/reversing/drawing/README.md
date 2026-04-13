@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup 
 
 **Challenge Name:** drawing  
 **Platform:** TexSAW CTF 2026  
 **Category:** Reversing  
-**Difficulty:** Easy  
-**Time spent:** ~30 minutes
 
 ## 1) Goal (What was the task?)
 The challenge gave a single binary named `drawing.nro` and the description `drawing be like`. The goal was to recover the flag in the format `texsaw{...}` by reverse engineering how the program worked and identifying where the hidden output was stored.

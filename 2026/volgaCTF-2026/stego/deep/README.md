@@ -1,8 +1,8 @@
-Challenge Name: deep
-Platform: VolgaCTF-2026
-Category: Forensics / Steganography
-Difficulty: Medium
-Time spent: ~1 hour
+# Stegnography CTF Challenge Writeup 
+
+**Challenge Name**: deep  
+**Platform**: VolgaCTF-2026  
+**Category**: Forensics / Steganography   
 
 ## 1) Goal (What was the task?)
 We were given a stego challenge named `deep` with a challenge image `stego.png`, a model checkpoint directory `encoder/`, and two Python files: `steganogan.py` and `train.py`. The objective was to recover the hidden message and extract the flag in the format `VolgaCTF{...}`.
@@ -125,9 +125,7 @@ Success meant finding a valid flag string, not just identifying that the image u
 ### 10. Brute-forced plausible message lengths and Reed-Solomon-decoded the result
 **Action:** Tried reasonable plaintext lengths, reconstructed the repeated payload for each one, then passed the candidate bytes through `RSCodec.decode()`.
 
-**Result:** At message length `43`, the decode succeeded and returned:
-
-`VolgaCTF{Th1s_m3ss@ge_wa$_d3eeply_embedded}`
+**Result:** At message length `43`, the decode succeeded and returned our flag.
 
 **Decision:** This matched the required flag format exactly, so the challenge was solved.
 

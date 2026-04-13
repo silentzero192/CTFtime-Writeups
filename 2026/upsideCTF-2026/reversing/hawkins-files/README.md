@@ -1,12 +1,11 @@
 # Hawkins File Writeup
 
-Challenge Name: Hawkins File  
-Platform: UpSide CTF 2026  
-Category: Reversing  
-Difficulty: Easy  
-Time spent: ~20 minutes
+**Challenge Name**: Hawkins File  
+**Platform**: UpSide CTF 2026  
+**Category**: Reversing  
 
 ## 1) Goal (What was the task?)
+
 The task was to analyze a provided Android APK, ignore the fake leads, figure out how the application builds its decryption key from the Hawkins lab clues, and decrypt the intercepted signal. Success meant recovering the flag in the `CTF{...}` format.
 
 ## 2) Key Clues (What mattered?)

@@ -1,10 +1,8 @@
-# lasOS Writeup
+# Pwn CTF Challenge Writeup
 
-Challenge Name: lasOS  
-Platform: VolgaCTF 2026  
-Category: Pwn  
-Difficulty: Hard  
-Time spent: Several hours
+**Challenge Name**: lasOS  
+**Platform**: VolgaCTF 2026  
+**Category**: Pwn  
 
 ## 1) Goal (What was the task?)
 The challenge gave a bootable OS image and a remote service that executes raw `x86_64` shellcode inside that custom OS. Success meant finding the real remote flag in the format `VolgaCTF{...}`.

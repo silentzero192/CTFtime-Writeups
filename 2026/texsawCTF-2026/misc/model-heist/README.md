@@ -1,12 +1,10 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Model Heist CTF Writeup 
 
-Challenge Name: Model Heist  
-Platform: TexSAW CTF 2026  
-Category: Reversing  
-Difficulty: Easy  
-Time spent: ~20 minutes
-
+**Challenge Name**: Model Heist  
+**Platform**: TexSAW CTF 2026  
+**Category**: Misc  
 ## 1) Goal (What was the task?)
+
 The challenge gave a single file, `model.h5`, and the description hinted at neural-network layers. The goal was to inspect the model, find the hidden flag, and submit it in the format `texsaw{flag}`.
 
 ## 2) Key Clues (What mattered?)
@@ -64,7 +62,7 @@ with h5py.File("model.h5", "r") as f:
 The key idea was that the model was not just a normal neural network checkpoint. One layer was deliberately named `secret_layer`, and its first row of weights was crafted so that each float represented an ASCII value scaled down by `1000`. Once that row was multiplied by `1000` and converted to characters, it directly revealed the flag. The challenge was really about inspecting model internals rather than using the model for inference.
 
 ## 6) Flag
-texsaw{w3ight5_t3ll_t4l3s}
+`texsaw{w3ight5_t3ll_t4l3s}`
 
 ## 7) Lessons Learned (make it reusable)
 - When a challenge gives you a machine-learning model, inspect the metadata before assuming you need to run the model

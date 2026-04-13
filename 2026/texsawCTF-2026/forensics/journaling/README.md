@@ -1,10 +1,8 @@
-# journaling Writeup
+# Journaling CTF Writeup
 
-Challenge Name: journaling  
-Platform: texsawCTF 2026  
-Category: Forensics  
-Difficulty: Medium  
-Time spent: about 1 hour
+**Challenge Name**: Journaling  
+**Platform**: texsawCTF 2026  
+**Category**: Forensics  
 
 ## 1) Goal (What was the task?)
 The challenge described a Windows machine used for journaling and note-taking that may have been infected by malware. The objective was to examine the disk evidence, recover any useful traces left behind, and rebuild the final flag from multiple segments.

@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Crypto CTF Challenge Writeup 
 
 **Challenge Name:** gfprng  
 **Platform:** VolgaCTF 2026  
 **Category:** Crypto  
-**Difficulty:** Easy  
-**Time spent:** 10 minutes
 
 ## 1) Goal (What was the task?)
 The challenge gives us a Sage script and an encrypted file called `encrypted_flag`. The objective is to understand the custom PRNG, decrypt the hidden `flag.png`, and recover the final flag in the format `VolgaCTF{...}`.

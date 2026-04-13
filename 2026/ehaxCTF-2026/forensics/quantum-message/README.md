@@ -1,12 +1,10 @@
-CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# CTF Writeup
 
-Challenge Name: Quantum Message  
-Platform: ehaxCTF-2026  
-Category: Forensics  
-Difficulty: Easy  
-Time spent: ~35 minutes
-
+**Challenge Name**: Quantum Message  
+**Platform**: ehaxCTF-2026  
+**Category**: Forensics  
 ## 1) Goal (What was the task?)
+
 The challenge gave a single audio file and a physics-themed hint asking, “who did he call?”.  
 Success meant extracting the hidden flag in the required format: `EH4X{...}`.
 
@@ -41,8 +39,7 @@ Success meant extracting the hidden flag in the required format: `EH4X{...}`.
    **Decision:** Parse as ASCII decimal values.
 
 5. **Action:** Parsed digit stream into ASCII (2–3 digit splits).  
-   **Result:** Unique valid plaintext appeared:
-   `EH4X{qu4ntum_phys1c5_15_50_5c4ry}`  
+   **Result:** Unique valid plaintext appeared.  
    **Decision:** Submit as final flag.
 
 ## 5) Solution Summary (What worked and why?)

@@ -3,8 +3,6 @@
 **Challenge Name:** Polly's Key  
 **Platform:** Bearcat CTF  
 **Category:** Reversing  
-**Difficulty:** Medium  
-**Time spent:** ~45 minutes
 
 ## 1) Goal (What was the task?)
 The challenge asked for a valid “key” that both the pirate and parrot would accept.  
@@ -64,16 +62,3 @@ The core trick was that `pollys_key` is a Ruby/Perl polyglot, so one input must 
 - `perl -MO=Deparse <script>` → view effective Perl code after parsing quirks.
 - Pattern: Polyglot challenge → validate behavior in all plausible interpreters early.
 - `python3 solve.py` → deterministic recovery of key + flag for this challenge.
-
-## Reproduce
-Run:
-
-```bash
-python3 solve.py
-```
-
-Expected output includes:
-
-```text
-[+] flag : BCCTF{Th3_P05h_9oLly61Ot_p4rr0t}
-```

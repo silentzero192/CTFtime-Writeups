@@ -1,10 +1,8 @@
-# ragebait Writeup
+# Ragebait Writeup
 
-Challenge Name: `ragebait`  
-Platform: `Texsaw CTF 2026`  
-Category: `Reversing`  
-Difficulty: `Medium`  
-Time spent: `About 10 minutes`
+**Challenge Name**: Ragebait  
+**Platform**: Texsaw CTF 2026  
+**Category**: Reversing
 
 ## 1) Goal (What was the task?)
 The goal was to reverse a stripped ELF binary and recover the real flag in the format `texsaw{...}`.

@@ -1,21 +1,11 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Sigbovik1 CTF Challenge Writeup 
 
-## Challenge Name:
-Summer Trip
-
-## Platform:
-Texsaw CTF 2026
-
-## Category:
-Pwn
-
-## Difficulty:
-Hard
-
-## Time spent:
-About 3 hours
+**Challenge Name**: Sigbovik1  
+**Platform**: TexsawCTF 2026  
+**Category**: Pwn 
 
 ## 1) Goal (What was the task?)
+
 The goal was to analyze a custom threaded-interpreter challenge, understand how its virtual machine worked, find a memory corruption bug, and use that bug to make the program reveal the flag. Success meant getting the remote service at `nc 143.198.163.4 1900` to print a flag in the format `texsaw{...}`.
 
 This was not a normal buffer-overflow challenge with a simple stack smash. Instead, the target was a custom VM with its own instruction format, tagged values, closures, vectors, strings, linked lists, and function-call conventions. The real task was to move from “I can run bytecode in this VM” to “I can abuse a VM bug to escape the VM and execute the built-in win path.”
@@ -55,7 +45,7 @@ These clues strongly suggested this was a custom threaded interpreter where “o
 
 ## 4) Steps (Clean execution)
 
-### 1. Inventory the challenge files
+### Inventory the challenge files
 I started by listing the challenge files and identifying what each one did.
 
 Important findings:
@@ -66,7 +56,7 @@ Important findings:
 
 This immediately told me the cleanest approach was not “fuzz the binary blindly,” but “learn the VM from source and then exploit it at the bytecode level.”
 
-### 2. Check binary protections and metadata
+### Check binary protections and metadata
 I checked the ELF metadata and protections.
 
 Key results:
@@ -81,7 +71,7 @@ Why this mattered:
 - The binary being static made disassembly and address recovery easier.
 - RWX and no PIE suggested control-flow redirection inside the VM could be enough to hit useful internal functions without building a full libc ROP chain.
 
-### 3. Read the assembler and recover the instruction format
+### Read the assembler and recover the instruction format
 The assembler was extremely important because it revealed how the VM instruction stream was encoded.
 
 Important observations:
@@ -95,7 +85,7 @@ Important observations:
 
 That was a major clue: the opcodes were literally addresses of code sections inside the ELF. This matched the “threaded interpreter” hint perfectly.
 
-### 4. Read the compiler to understand VM semantics
+### Read the compiler to understand VM semantics
 The Rust compiler source showed how the high-level language was lowered into bytecode.
 
 Important things I learned:
@@ -113,7 +103,7 @@ Important things I learned:
 
 This step mattered because I needed to know what a valid lambda looked like before I could corrupt one intentionally.
 
-### 5. Disassemble the interpreter handlers
+### Disassemble the interpreter handlers
 I dumped the custom opcode handlers from the ELF:
 
 Useful sections included:
@@ -141,7 +131,7 @@ Important discoveries:
 
 This meant that if I could overwrite a lambda’s `offset`, I could redirect execution to any 16-byte-aligned “instruction” inside the user-controlled bytecode page.
 
-### 6. Find the memory corruption bug
+### Find the memory corruption bug
 The core bug showed up in `vector-ref` and `vector-set!`.
 
 Expected behavior:
@@ -167,7 +157,7 @@ Why it is exploitable:
 
 The same mistake existed in the string handlers too, but vectors were the easiest primitive to use for structured corruption.
 
-### 7. Confirm the hidden win path existed
+### Confirm the hidden win path existed
 Before writing the exploit, I looked for signs of an existing “print the flag” function inside the binary.
 
 Strings showed:
@@ -182,7 +172,7 @@ That was perfect:
 - I did not need to open/read the file manually
 - I only needed to redirect execution to that built-in function
 
-### 8. Build a minimal local bytecode runner
+### Build a minimal local bytecode runner
 I first made sure I could execute simple hand-crafted bytecode successfully.
 
 I tested tiny payloads such as:
@@ -192,7 +182,7 @@ I tested tiny payloads such as:
 
 This was important because the full exploit depended on correct stack positioning inside the VM. A single wrong `FRAME`, `CALL`, or `RETURN` causes crashes immediately.
 
-### 9. Understand why a simple control hijack was not enough
+### Understand why a simple control hijack was not enough
 My first attempt redirected execution straight into the win function by forging an instruction entry.
 
 That partially worked, but it crashed because:
@@ -205,7 +195,7 @@ So the real problem became:
 
 This is where the threaded-interpreter structure really mattered.
 
-### 10. Use the VM bug to create a safe fake execution context
+### Use the VM bug to create a safe fake execution context
 The final exploit strategy was:
 
 1. Create a real writable heap object under VM control.
@@ -217,7 +207,7 @@ The final exploit strategy was:
 
 The clever part was that I did not need an external gadget chain. I used the interpreter’s own object model and call machinery as the control-flow primitive.
 
-### 11. Deal with ASLR without a separate external leak stage
+### Deal with ASLR without a separate external leak stage
 Even though the binary itself was not PIE, heap and runtime data were still randomized.
 
 I solved this by building the final payload so it computed what it needed at runtime:
@@ -231,7 +221,7 @@ One nice trick I used:
 
 That let the exploit stay self-contained and robust.
 
-### 12. Verify locally
+### Verify locally
 I then turned the final payload into a reusable exploit script:
 
 - `python3 exploit.py build`
@@ -247,7 +237,7 @@ cat: flag.txt: No such file or directory
 
 That was expected, because there was no local `flag.txt` in the workspace. It still proved the exploit path itself was correct.
 
-### 13. Test the remote service carefully
+### Test the remote service carefully
 Before sending the final exploit, I tested the remote service with a tiny payload that should simply print `123`.
 
 That was useful because it confirmed:
@@ -261,18 +251,14 @@ I found that using `nc` was the cleanest and most reliable way to talk to the se
 python3 exploit.py build test | nc 143.198.163.4 1900
 ```
 
-### 14. Run the final payload against the remote target
+### Run the final payload against the remote target
 Finally, I sent the exploit payload to the remote service:
 
 ```bash
 python3 exploit.py build exploit | nc 143.198.163.4 1900
 ```
 
-The service returned the flag:
-
-```text
-texsaw{ezpzlmnsqzy_didyoulikethepaper?_23948102938409}
-```
+The service returned the flag.
 
 ## 5) Solution Summary (What worked and why?)
 The challenge was a custom threaded interpreter where each opcode was actually a code pointer to a native handler in the ELF. By reversing the compiler and the VM handlers, I found that `vector-ref` and `vector-set!` had a broken bounds check: they compared the requested index against the vector pointer instead of the vector length. That turned them into powerful out-of-bounds read/write primitives.

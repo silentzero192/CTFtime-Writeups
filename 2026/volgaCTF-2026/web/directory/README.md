@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Web CTF Challenge Writeup 
 
-Challenge Name: Directory  
-Platform: VolgaCTF 2026  
-Category: Web  
-Difficulty: Easy  
-Time spent: ~20 minutes
+**Challenge Name**: Directory  
+**Platform**: VolgaCTF 2026  
+**Category**: Web  
 
 ## 1) Goal (What was the task?)
 The challenge asked me to bypass authentication and retrieve the flag from a web-based corporate directory service. Success meant finding a flag in the format `VolgaCTF{...}`.

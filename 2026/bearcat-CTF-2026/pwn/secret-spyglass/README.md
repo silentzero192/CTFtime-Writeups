@@ -1,14 +1,11 @@
 # CTF Writeup
 
-**Challenge Name:** Secret Spyglass
-**Platform:** Bearcat CTF 2026
-**Category:** Pwn
-**Difficulty:** Easy
-**Time spent:** ~20 minutes
+**Challenge Name:** Secret Spyglass  
+**Platform:** Bearcat CTF 2026  
+**Category:** Pwn  
 
 ## 1) Goal (What was the task?)
-The binary asks for a numeric guess and compares it against a secret random number from `/dev/urandom`.  
-Success means making the program print the flag in `BCCTF{...}` format from `print_flag()`.
+The binary asks for a numeric guess and compares it against a secret random number from `/dev/urandom`.  Success means making the program print the flag in `BCCTF{...}` format from `print_flag()`.
 
 ## 2) Key Clues (What mattered?)
 - The challenge gives a remote service: `nc chal.bearcatctf.io 20011`

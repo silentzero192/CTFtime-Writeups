@@ -1,11 +1,10 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
-Challenge Name: Lost in Waves  
-Platform: ehaxCTF 2026  
-Category: Forensics (Misc / Signals & Audio)  
-Difficulty: Easy  
-Time spent: ~40 minutes
+# CTF Writeup 
+**Challenge Name**: Lost in Waves  
+**Platform**: ehaxCTF 2026  
+**Category**: Forensics (Misc / Signals & Audio) 
 
 ## 1) Goal (What was the task?)
+
 The objective was to analyze challenge files related to “covert channels” and recover the hidden flag.  
 Success condition was finding a valid flag in the format `EH4X{...}`.
 

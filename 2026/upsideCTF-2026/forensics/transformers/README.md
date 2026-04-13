@@ -1,10 +1,11 @@
-Challenge Name: transformers
-Platform: UpsideCTF 2026
-Category: Forensics
-Difficulty: Medium
-Time spent: ~1 hour 20 minutes
+# Forensics CTF Challenge Writeup
+
+**Challenge Name**: transformers  
+**Platform**: UpsideCTF 2026  
+**Category**: Forensics  
 
 ## 1) Goal (What was the task?)
+
 The challenge gave a single artifact named `file` and asked for the flag in the format `CTF{...}`.
 
 Success meant figuring out what the file really was, analyzing it properly, and recovering the hidden flag.
@@ -49,7 +50,6 @@ Success meant figuring out what the file really was, analyzing it properly, and 
    Decision: Interpret the surrounding commas as stand-ins for `{` and `}`.
 
 6. I reconstructed the final flag.
-   Result: `CTF{TH3.FL4Y3D.9UB6M}`
 
 Important commands/tools used:
 

@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Stegnography CTF Challenge Writeup 
 
-Challenge Name: Palo Arto  
-Platform: VolgaCTF Qualifier 2026  
-Category: Forensics / Stego  
-Difficulty: Easy  
-Time spent: ~25 minutes
+**Challenge Name**: Palo Arto  
+**Platform**: VolgaCTF Qualifier 2026  
+**Category**: Forensics / Stego  
 
 ## 1) Goal (What was the task?)
 

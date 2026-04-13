@@ -1,10 +1,8 @@
-# CTF Writeup Template (Beginner-Friendly, Portfolio-Ready)
+# Reversing CTF Challenge Writeup
 
 **Challenge Name:** The Kamchatka Taps  
 **Platform:** upsideCTF 2026  
 **Category:** Reversing  
-**Difficulty:** Easy  
-**Time spent:** ~15 minutes
 
 ## 1) Goal (What was the task?)
 The challenge gave a single audio file and said the signal sounded like someone rhythmically banging on a heating pipe from a prison in Kamchatka. The objective was to decode that message, identify who was trapped inside, and submit it in the format `CTF{...}`.
@@ -26,11 +24,9 @@ The challenge gave a single audio file and said the signal sounded like someone 
 1. **Action:** Listed the challenge files.  
    **Result:** There was only one file: `kamchatka_taps.wav`.  
    **Decision:** Focus the solve entirely on the audio signal.
-
 2. **Action:** Checked the audio properties with tools like `file`, `soxi`, and `ffprobe`.  
    **Result:** The file was a normal mono PCM WAV file, about 20.4 seconds long.  
    **Decision:** Since nothing unusual appeared in the container format, the real data was likely in the audio timing itself.
-
 3. **Action:** Examined the waveform and grouped the signal into tone bursts and silent gaps.  
    **Result:** The audio had very clean timing units:
    - `0.1s` tone
@@ -43,16 +39,10 @@ The challenge gave a single audio file and said the signal sounded like someone 
    - long tone = dash
    - medium gap = next letter
    - long gap = next word
-
 4. **Action:** Converted the timing pattern into Morse symbols and decoded each group.  
    **Result:** The message decoded to:
    `CTF THE AMERICAN IS ALIVE`
    **Decision:** Since the flag format was `CTF{...}`, convert the decoded phrase into the expected submission format.
-
-5. **Action:** Wrapped the decoded message as a flag.  
-   **Result:** Final flag:
-   `CTF{THE_AMERICAN_IS_ALIVE}`
-   **Decision:** Submit the flag.
 
 ## 5) Solution Summary (What worked and why?)
 The solve worked because the audio was not random noise or hidden metadata. It was a timing-based signal with very regular short and long bursts, which is a classic sign of Morse code. Once I measured the tone lengths and gap lengths, the structure became obvious: short burst for dot, long burst for dash, medium gap for a new letter, and long gap for a new word. Decoding those groups revealed the sentence, which could then be formatted directly as the flag.

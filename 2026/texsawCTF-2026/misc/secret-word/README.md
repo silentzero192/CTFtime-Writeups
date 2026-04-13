@@ -1,12 +1,10 @@
-# Secret Word Writeup
+# Secret Word CTF Writeup
 
-Challenge Name: Secret Word  
-Platform: Texsaw CTF 2026  
-Category: Forensics  
-Difficulty: Easy  
-Time spent: 5 minutes
-
+**Challenge Name**: Secret Word  
+**Platform**: Texsaw CTF 2026  
+**Category**: Forensics  
 ## 1) Goal (What was the task?)
+
 We were given a suspicious Word document and told that the flag was hidden somewhere inside it. Success meant extracting a value in the format `texsaw{...}`.
 
 ## 2) Key Clues (What mattered?)

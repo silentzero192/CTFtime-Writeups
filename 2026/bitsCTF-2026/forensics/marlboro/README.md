@@ -2,9 +2,7 @@
 
 **Challenge Name:** Marlboro  
 **Platform:** BITSCTF  
-**Category:** Forensics  
-**Difficulty:** Easy  
-**Time Spent:** ~20 minutes  
+**Category:** Forensics    
 
 ---
 

@@ -1,8 +1,8 @@
 # The Hawkins Breach Writeup
 
-Challenge Name: The Hawkins Breach  
-Platform: UpSide CTF 2026  
-Category: Web 
+**Challenge Name**: The Hawkins Breach  
+**Platform**: UpSide CTF 2026  
+**Category**: Web 
 
 ## 1) Goal (What was the task?)
 The objective was to interact with a Hawkins Laboratory web portal that accepted XML Subject Reports and find a way to abuse the backend XML parser. Success meant manipulating the XML processing to disclose sensitive data and recover the flag in the `CTF{...}` format.
