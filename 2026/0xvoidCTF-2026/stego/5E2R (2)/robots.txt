@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin
+Disallow: /secret
+Disallow: /hidden
+Disallow: /flag
+Disallow: /config
+
+# Flag Part 1: 0xV01D{St4rt3d_S0lv
+
+User-agent: Googlebot
+Disallow: /private
+
+User-agent: Bingbot
+Allow: /

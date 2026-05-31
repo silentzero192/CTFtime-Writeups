@@ -1,0 +1,4 @@
+hint1 : The visible database is cleaner than the capture moment really was.
+hint2 : Recover the old rows from the SQLite side files, then combine them with the thumbnail payload.
+hint3 : thumb-salt:camera-cache-17
+hint4 : The visible database is too clean. SQLite often leaves the real story nearby, and thumbnails can carry more than pixels. The deleted row may be telling you where to look, not what to submit.

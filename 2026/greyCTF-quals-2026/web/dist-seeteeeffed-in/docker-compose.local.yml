@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:18.3
+    container_name: ctf-db
+    environment:
+      POSTGRES_DB: ctf
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+    volumes:
+      - ./db/init-local.sql:/docker-entrypoint-initdb.d/001-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d ctf"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    container_name: ctf-backend
+    environment:
+      DB_DSN: "dbname=ctf user=app_user password=app_pass123 host=db"
+      FLASK_APP: app.py
+      FLASK_ENV: development
+      CHALLENGE_FLAG: "grey{test_flag_for_local_testing}"
+      TEAM_TOKEN_GATE_ENABLED: "0"
+    ports:
+      - "34567:5000"
+    depends_on:
+      db:
+        condition: service_healthy

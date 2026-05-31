@@ -1,0 +1,38 @@
+0  The archive team left a calm sentence here.
+x  The archive team left a calm sentence here.
+V  The archive team left a calm sentence here.
+0  The archive team left a calm sentence here.
+1  The archive team left a calm sentence here.
+D  The archive team left a calm sentence here.
+{  The archive team left a calm sentence here.
+F  The archive team left a calm sentence here.
+I  The archive team left a calm sentence here.
+R  The archive team left a calm sentence here.
+S  The archive team left a calm sentence here.
+T  The archive team left a calm sentence here.
+_  The archive team left a calm sentence here.
+L  The archive team left a calm sentence here.
+E  The archive team left a calm sentence here.
+T  The archive team left a calm sentence here.
+T  The archive team left a calm sentence here.
+E  The archive team left a calm sentence here.
+R  The archive team left a calm sentence here.
+S  The archive team left a calm sentence here.
+_  The archive team left a calm sentence here.
+N  The archive team left a calm sentence here.
+E  The archive team left a calm sentence here.
+V  The archive team left a calm sentence here.
+E  The archive team left a calm sentence here.
+R  The archive team left a calm sentence here.
+_  The archive team left a calm sentence here.
+L  The archive team left a calm sentence here.
+I  The archive team left a calm sentence here.
+E  The archive team left a calm sentence here.
+}  The archive team left a calm sentence here.
+
+solution : 
+	
+this file names as letter.txt was given in the challenge.
+
+taking the first letter from each line forms the flag
+final flag is : 0xV01D{FIRST_LETTERS_NEVER_LIE}
