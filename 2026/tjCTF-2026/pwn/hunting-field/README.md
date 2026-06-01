@@ -1,27 +1,8 @@
 # Hunting Field
 
-**Category**: Pwn  
-**Points**: N/A  
-**Description**: Take up your arms, and slay your enemies!  
+**Category**: `Pwn`  
+**Description**: `Take up your arms, and slay your enemies!`  
 **Connection**: `nc tjc.tf 31412`
-
-## Table of Contents
-
-- [Hunting Field](#hunting-field)
-  - [Table of Contents](#table-of-contents)
-  - [Analysis](#analysis)
-    - [Source Code Overview](#source-code-overview)
-    - [The Win Condition](#the-win-condition)
-    - [The Vulnerability](#the-vulnerability)
-    - [Stack Layout](#stack-layout)
-  - [Exploitation](#exploitation)
-    - [Understanding the Write Primitive](#understanding-the-write-primitive)
-    - [Crafting the Value](#crafting-the-value)
-    - [Triggering the Flag Check](#triggering-the-flag-check)
-  - [Exploit Script](#exploit-script)
-  - [Flag](#flag)
-
----
 
 ## Analysis
 

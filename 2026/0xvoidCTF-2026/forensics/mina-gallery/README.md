@@ -1,7 +1,7 @@
 # Mina Gallery — Forensic Challenge Writeup
 
 **Category:** `Forensics`  
-**Challenge Name:** `Mina Gallery` 
+**Challenge Name:** `Mina Gallery`   
 **Flag:** `0xV01D{wal_frames_remember_deleted_gallery_keys}`
 
 ---

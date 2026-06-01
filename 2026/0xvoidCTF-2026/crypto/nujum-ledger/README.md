@@ -1,27 +1,8 @@
 # Nujum Ledger - Writeup
 
-**CTF:** 0xVoid CTF 2026
-**Category:** Cryptography
-**Description:** A ledger export contains signed production records and a sealed note. The archive is small, but the operator cleanup was incomplete.
-
----
-
-## Table of Contents
-
-- [Summary](#summary)
-- [Initial Analysis](#initial-analysis)
-- [The Vulnerability](#the-vulnerability)
-- [ECDSA Nonce Reuse Attack](#ecdsa-nonce-reuse-attack)
-  - [The Math](#the-math)
-  - [Step 1: Find the Repeated r](#step-1-find-the-repeated-r)
-  - [Step 2: Recover the Nonce k](#step-2-recover-the-nonce-k)
-  - [Step 3: Recover the Private Key](#step-3-recover-the-private-key)
-- [Decrypting the Flag](#decrypting-the-flag)
-- [The Decoys](#the-decoys)
-- [Full Solution Script](#full-solution-script)
-- [Flag](#flag)
-
----
+**Plateform:** `0xVoid CTF 2026`  
+**Category:** `Cryptography`  
+**Description:** `A ledger export contains signed production records and a sealed note. The archive is small, but the operator cleanup was incomplete.`
 
 ## Summary
 
@@ -228,11 +209,3 @@ Output:
 2. **Always check for repeated `r` values** when auditing ECDSA implementations. The `r` value is public and makes nonce reuse trivially detectable.
 3. **Decoys are part of the challenge.** Read all notes carefully and don't trust the first flag-like string you find.
 4. **The operator note is a hint, not a spoiler.** *"Repeated r is fatal"* is the core vulnerability described in a single sentence.
-
----
-
-## References
-
-- [ECDSA Nonce Reuse Attack](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm#Signature_verification_algorithm)
-- [Sony PS3 ECDSA Private Key Leak (2010)](https://en.wikipedia.org/wiki/PlayStation_3_hacking)
-- [secp256k1 Curve Parameters](https://en.bitcoin.it/wiki/Secp256k1)

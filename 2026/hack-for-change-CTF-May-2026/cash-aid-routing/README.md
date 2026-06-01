@@ -1,7 +1,6 @@
 # Cash Aid Routing
 
 **Category:** Algorithmic / Optimization  
-**Points:** N/A (CTF Challenge)  
 **Flag:** `SDG{1a92cee1c1983db023583a1f542122ad}`
 
 ## Challenge Overview

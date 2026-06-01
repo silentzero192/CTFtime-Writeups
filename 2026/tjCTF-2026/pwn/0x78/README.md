@@ -1,20 +1,7 @@
-# 0x78 — tjCTF 2026 (pwn)
+# 0x78 — Pwn Chall Writeup
 
-**Challenge:** Oh the joys of file structs...  
-**Binary:** `Ox78` — ELF 64-bit LSB PIE, not stripped  
-**Libc:** glibc 2.34 (Ubuntu)  
+**Challenge Name:** `0x78`  
 **Port:** `tjc.tf:31378`
-
-## Table of Contents
-
-1. [Analysis](#analysis)
-2. [Vulnerability](#vulnerability)
-3. [Exploitation Strategy](#exploitation-strategy)
-4. [The Problem with the Naive Approach](#the-problem-with-the-naive-approach)
-5. [The Fix: Shifting `_wide_data`](#the-fix-shifting-_wide_data)
-6. [Full Call Chain](#full-call-chain)
-7. [Exploit Script](#exploit-script)
-8. [Flag](#flag)
 
 ---
 

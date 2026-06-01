@@ -1,7 +1,6 @@
 # Unfinished File
 
-**Category:** Forensics  
-**Author:** (not specified)  
+**Category:** `Forensics`  
 **Flag:** `tjctf{n3v3r_l3t_0ther_p30ple_t0uch_ur_c0mputer}`
 
 ## Challenge Description
@@ -92,11 +91,6 @@ data = bytes.fromhex('3628213624392c713471301d2e71361d72362a27301d327172322e271d
 key = 0x42
 decoded = bytes(b ^ key for b in data)
 print(decoded.decode())
-```
-
-Output:
-```
-tjctf{n3v3r_l3t_0ther_p30ple_t0uch_ur_c0mputer}
 ```
 
 ### Step 5: (Bonus) The full decoy readme

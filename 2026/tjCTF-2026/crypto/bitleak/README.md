@@ -1,9 +1,8 @@
-# bitleak — RSA Parity Oracle Attack
+# Bitleak — RSA Parity Oracle Attack
 
-**Category:** Crypto  
-**Challenge:** bitleak  
+**Category:** `Crypto`  
+**Challenge:** `bitleak`  
 **Flag:** `tjctf{parity_isnt_privacy}`  
-**Solves:** (your count here)
 
 ---
 

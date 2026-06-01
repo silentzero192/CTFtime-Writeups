@@ -1,6 +1,6 @@
 # Check the Fine Print
 
-- **Category:** Forensics
+- **Category:** `Forensics`  
 - **Flag:** `tjctf{wow_you_actually_read_it}`
 
 ## Challenge Description
@@ -122,10 +122,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-```
-
-## Flag
-
-```
-tjctf{wow_you_actually_read_it}
 ```

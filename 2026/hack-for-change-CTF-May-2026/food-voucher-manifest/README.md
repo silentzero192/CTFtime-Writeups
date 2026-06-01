@@ -2,7 +2,7 @@
 
 **Challenge**: Food Voucher Manifest  
 **Category**: Cryptography / ECB Oracle  
-**Flag**: `SDG{...}` (obtained by submitting the recovered audit_secret)
+**Flag**: `SDG{...}`
 
 ---
 

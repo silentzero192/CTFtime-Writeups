@@ -1,6 +1,6 @@
-# obscure crusher 1
+# Obscure Crusher 1 - Writeup
 
-- **Category:** Forensics
+- **Category:** `Forensics`  
 - **Flag:** `tjctf{0bscur3_crush3r_1cns_ttf_lzm3}`
 
 ## Challenge Description
@@ -112,10 +112,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-```
-
-## Flag
-
-```
-tjctf{0bscur3_crush3r_1cns_ttf_lzm3}
 ```

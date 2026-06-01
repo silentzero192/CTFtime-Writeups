@@ -1,7 +1,6 @@
 # Microfinance IDOR
 
-**Category:** Web / Insecure Direct Object Reference (IDOR)  
-**Flag:** `SDG{<flag>}`
+**Category:** `Web / Insecure Direct Object Reference (IDOR)`  
 
 ## Challenge Overview
 

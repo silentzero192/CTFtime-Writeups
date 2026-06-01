@@ -1,6 +1,6 @@
-# Rimal Transit
+# Rimal Transit - Writeup
 
-**Category:** Forensics  
+**Category:** `Forensics`  
 **Flag:** `0xV01D{dns_frames_rebuilt_the_route_home}`
 
 ## Challenge Description

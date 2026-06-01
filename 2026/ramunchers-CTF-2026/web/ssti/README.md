@@ -1,7 +1,6 @@
 # SSTI - Server-Side Template Injection
 
 **Category:** Web  
-**Points:** N/A  
 **Flag:** `RAM{ins3cure_dr0pdown}`
 
 ---

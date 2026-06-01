@@ -1,7 +1,7 @@
 # WEBIFILE - Writeup
 
 **Category:** `Web`  
-**Challenge:** `webifile`
+**Challenge:** `webifile`  
 **Description:** `Find the flag. It's documented!`
 
 ## Summary

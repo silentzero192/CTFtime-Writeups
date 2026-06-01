@@ -1,7 +1,6 @@
 # Squares
 
 **Category:** Crypto  
-**Points:** ~  
 **Flag:** `tjctf{m4tr1c3s_4r3_4ll_y0u_n33d}`
 
 ---
@@ -87,7 +86,3 @@ tjctf{m4tr1c3s_4r3_4ll_y0u_n33d}
 ```
 
 The trailing spaces are padding to make the vector length 52.
-
----
-
-**Flag:** `tjctf{m4tr1c3s_4r3_4ll_y0u_n33d}`

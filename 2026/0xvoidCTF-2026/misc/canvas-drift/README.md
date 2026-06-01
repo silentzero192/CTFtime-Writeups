@@ -6,16 +6,6 @@
 
 ---
 
-## Challenge Description
-
-> FINAL SUBMISSION WARNING  
-> This challenge allows only 2 flag attempts. Submit only when you are sure.  
-> The provided artifact contains everything needed to recover one valid flag.
-
-**Flag Format:** `0xV01D{......}`
-
----
-
 ## Analysis
 
 ### Initial Reconnaissance
@@ -113,9 +103,3 @@ print(result)
 | **LSB Steganography** | Embeds data in the least significant bit of each color channel — visually imperceptible |
 | **Capacity** | An 80×40 RGB image holds 9600 bytes = 9600 bits = up to 1200 ASCII characters |
 | **Detection** | Challenge filename hinted at LSB; in real scenarios, statistical analysis (chi-square test) can detect LSB embedding |
-
-### Further Reading
-
-- [Netpbm Format Documentation](https://netpbm.sourceforge.net/doc/ppm.html)
-- [LSB Steganography Explained](https://www.geeksforgeeks.org/image-steganography-using-least-significant-bit/)
-- [Stegsolve](https://github.com/roboticeyeza/stegsolve) — popular CTF steganography tool

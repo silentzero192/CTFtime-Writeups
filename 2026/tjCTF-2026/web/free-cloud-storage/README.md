@@ -1,14 +1,9 @@
 # Free Cloud Storage
 
-| Field       | Value                                        |
-|-------------|----------------------------------------------|
-| **Category**| Web                                          |
-| **Points**  | —                                            |
-| **Solves**  | —                                            |
-| **Author**  | —                                            |
-| **Flag**    | `tjctf{i_l0v3_fr33_st0r4g3}`                |
-
----
+| Field        | Value                        |
+| ------------ | ---------------------------- |
+| **Category** | Web                          |
+| **Flag**     | `tjctf{i_l0v3_fr33_st0r4g3}` |
 
 ## Description
 
