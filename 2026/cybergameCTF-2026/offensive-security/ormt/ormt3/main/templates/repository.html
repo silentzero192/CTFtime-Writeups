@@ -1,0 +1,112 @@
+{% load dicts %}{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Repository</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <main class="container page-content">
+        <section class="filter-pane mb-3 p-3 rounded position-relative">
+            <h5 class="mb-2">Select parameters</h5>
+            <div class="d-flex justify-content-end mb-2">
+                <button id="addFilterBtn" type="button" class="btn btn-outline-primary">+ Add filter</button>
+            </div>
+            <form id="filterForm" class="d-flex flex-column">
+                <div class="d-flex gap-2 mb-2 align-items-center">
+                    <label class="mb-0">Aggregate:</label>
+                    <select id="aggregateSelect" class="form-select" style="max-width:12rem;">
+                        <option value="">None</option>
+                        <option>Min</option>
+                        <option>Max</option>
+                        <option>Avg</option>
+                        <option>Count</option>
+                        <option>Sum</option>
+                        <option>Convert</option>
+                    </select>
+                    <label class="mb-0">Field:</label>
+                    <select id="aggregateFieldSelect" class="form-select" style="max-width:12rem;">
+                        <option value="">None</option>
+                        <option value="id">id</option>
+                        <option value="title">title</option>
+                        <option value="picture">picture</option>
+                        <option value="price">price</option>
+                        <option value="description">description</option>
+                    </select>
+                </div>
+                <div id="filtersContainer" class="d-flex flex-column gap-2"></div>
+                <div class="d-flex gap-2 mt-3">
+                    <button id="filterSubmit" class="btn btn-primary" type="submit">Apply</button>
+                    <button id="filterClear" class="btn btn-secondary" type="button">Clear</button>
+                </div>
+            </form>
+        </section>
+        {% if aggregate %}
+            <div class="aggregate-wrap mb-3">
+                <div class="table-wrap p-3">
+                    <h5 class="section-title mb-2">Aggregate result</h5>
+                    <div class="aggregate-box">
+                        <span class="agg-value">{{ aggregate }}</span>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        {% if result %}
+            <h1 class="section-title">Repository</h1>
+            <div class="table-wrap">
+                <table class="pretty-table">
+        <thead>
+            <tr>
+            {% for col in columns %}<th>{{ col }}</th>{% endfor %}
+            </tr>
+        </thead>
+                <tbody>
+                    {% for res in result %}
+                    <tr>
+                        {% for col in columns %}
+                        <td>{{ res|get_item:col }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        {% endif %}
+    </main>
+
+    <footer class="site-footer mt-4">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Bookworms</h5>
+                    <p class="text-muted small">Find your next great read.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Pages</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Legal</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="{% static 'repository-filter.js' %}"></script>
+    </body>
+    </html>

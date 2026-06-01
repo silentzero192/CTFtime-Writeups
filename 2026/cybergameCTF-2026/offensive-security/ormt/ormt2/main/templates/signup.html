@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="login-wrapper page-content">
+        <div class="login-box">
+            <h2 class="site-title">Bookworms bookstore</h2>
+            <h1 class="section-title">Create an account</h1>
+                <form method="post" action="/signup">
+                    <input name="username" type="text" placeholder="Username" autocomplete="username" required />
+                    <input name="password" type="password" placeholder="Password" autocomplete="new-password" required />
+                    <div class="auth-actions">
+                        <button class="btn btn-login" type="submit">Sign up</button>
+                        <span class="or-sep">or</span>
+                        <button type="button" class="btn btn-login" onclick="location.href='/login'">Back to login</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

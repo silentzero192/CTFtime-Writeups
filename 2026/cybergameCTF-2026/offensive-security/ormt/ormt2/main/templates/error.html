@@ -1,0 +1,18 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookworms Bookstore</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="error-wrapper page-content">
+        <div class="error-box">
+            <h1 class="section-title">{{ message }}</h1>
+            <a href="/login" class="btn btn-back">Back to login</a>
+        </div>
+    </div>
+</body>
+</html>
