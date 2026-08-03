@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MooseSpell - My Spells</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Inscribe a Spell</h1>
+        <form id="form">
+            <label for="title">Title</label>
+            <input type="text" id="title" required><br>
+            <label for="incantation">Incantation</label>
+            <input type="text" id="incantation" required><br><br>
+            <input class="btn btn-primary" id="submit" type="submit" value="Inscribe">
+            <div id="error-message"></div>
+        </form>
+    </div>
+    <div class="content">
+        <h1>My Spellbook</h1>
+        <ul>
+            {% for spell in spells %}
+                <li>
+                    <a href="/spells/{{ spell.id }}">{{ spell.title }}</a>
+                    &mdash; <code>{{ spell.id }}</code>
+                </li>
+            {% else %}
+                Your spellbook is empty.
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="/static/js/spells.js"></script>
+</body>
+</html>

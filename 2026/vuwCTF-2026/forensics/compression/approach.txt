@@ -1,0 +1,10 @@
+1) Read the file in binary mode: (2 bytes per iteration: (count, character))
+Open compressed.dat as a raw binary stream so bytes aren't interpreted as text strings or control sequences.
+
+2) Unpack the byte pairs:(Convert byte 1 to an integer)
+Iterate through the file 2 bytes at a time:
+    Byte 1: The repeat count (integer value of the byte).
+    Byte 2: The actual ASCII character to display.
+
+3) Expand and rebuild the text stream: (Multiply character by count)
+Multiply the second byte by the count from the first byte, and write the result into a new text file or output buffer.

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MooseSpell - {{ spell.title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>{{ spell.title }}</h1>
+        <div class="incantation">{{ spell.incantation|safe }}</div>
+        <hr>
+        <form id="form">
+            <input type="hidden" id="spell_id" value="{{ spell.id }}">
+            <input class="btn" id="submit" type="submit" value="&lt; Report to the Archmage Moose &gt;">
+            <div id="error-message"></div>
+        </form>
+    </div>
+    <script src="/static/js/spell.js"></script>
+</body>
+</html>
